@@ -8,8 +8,8 @@ class HomePage extends Page {
 	);
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab("Root.Content.Main", new TextareaField('Testimonial'));
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Attribution'));
+		$fields->addFieldToTab("Root.Main", new TextareaField('Testimonial'));
+		$fields->addFieldToTab("Root.Main", new TextField('Attribution'));
 		return $fields;
 	}
 }

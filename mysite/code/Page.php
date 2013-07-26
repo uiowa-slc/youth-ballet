@@ -89,8 +89,8 @@ class Page_Controller extends ContentController {
 	}
 	
 			function Home($limit=3) {
-		$set = DataObject::get("HomePageTab", null, null, null, $limit);
-		
+		//$set = DataObject::get("HomePageTab", null, null, null, $limit);
+		$set = HomePageTab::get()->limit($limit); 
 		return $set;
 	}
 	

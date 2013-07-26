@@ -1,6 +1,6 @@
 
 <ul>
-<% control ChildrenOf(schedules) %>
+<% loop ChildrenOf(schedules) %>
 	<li><a href="$FileUpload.URL">$MenuTitle</a></li>
-<% end_control %>
+<% end_loop %>
 </ul>

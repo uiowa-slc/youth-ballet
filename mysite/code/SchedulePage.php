@@ -26,7 +26,7 @@ class SchedulePage extends Page {
 function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
-		$fields->addFieldToTab('Root.Content.File', new FileIFrameField('FileUpload','Upload file here',null,null,null,'assets/Uploads/schedules/'));
+		$fields->addFieldToTab('Root.File', new FileIFrameField('FileUpload','Upload file here',null,null,null,'assets/Uploads/schedules/'));
 	
     return $fields;
 	

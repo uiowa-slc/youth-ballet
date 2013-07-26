@@ -12,8 +12,8 @@ class EventPage extends Page {
 	);
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Date'));
-		$fields->addFieldToTab("Root.Content.Image", new ImageField('Picture'));
+		$fields->addFieldToTab("Root.Main", new TextField('Date'));
+		$fields->addFieldToTab("Root.Image", new UploadField('Picture'));
 		return $fields;
 	}
 }

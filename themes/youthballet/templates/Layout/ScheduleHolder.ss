@@ -10,9 +10,9 @@
 $Content
 
 <ul>
-<% control Children  %>
+<% loop Children  %>
 	<li><a href="$FileUpload.URL">$MenuTitle</a></li>
-<% end_control %>
+<% end_loop %>
 </ul>
 </div>
 

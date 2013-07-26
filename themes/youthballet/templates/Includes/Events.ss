@@ -1,7 +1,7 @@
-	<% control ChildrenOf(events) %>
+	<% loop ChildrenOf(events) %>
 		<div class="event">
 		<% if Picture %>
-		<img src="<% control Picture %><% control SetWidth(87) %> $URL <% end_control %><% end_control %>" alt="$Title"/>
+		<img src="<% loop Picture %><% loop SetWidth(87) %> $URL <% end_loop %><% end_loop %>" alt="$Title"/>
 		<% end_if %>
 			<div class="event-description">
 			<h3><a href="$Link">$MenuTitle</a></h3>
@@ -10,4 +10,4 @@
 			</div>
 		</div>
 		<div class="clear-both"></div>
-	<% end_control %>
+	<% end_loop %>
