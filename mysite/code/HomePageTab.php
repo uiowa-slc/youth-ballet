@@ -28,7 +28,7 @@ class HomePageTab extends SiteTree {
 function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
-	$fields->addFieldToTab('Root.Content.Images', new ImageField('FeatureImage', 'Feature Box Image 727x528'));
+	$fields->addFieldToTab('Root.Images', new UploadField('FeatureImage', 'Feature Box Image 727x528'));
 
 	
 	

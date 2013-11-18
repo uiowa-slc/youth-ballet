@@ -89,11 +89,9 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('typography');
 		Requirements::themedCSS('form');
 	}
-
-
-	function Home($limit=3) {
-		$set = DataObject::get("HomePageTab", null, null, null, $limit);
-
+		function Home($limit=4) {
+		//$set = DataObject::get("HomePageTab", null, null, null, $limit);
+		$set = HomePageTab::get()->limit($limit); 
 		return $set;
 	}
 
