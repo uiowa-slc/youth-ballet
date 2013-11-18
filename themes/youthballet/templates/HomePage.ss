@@ -88,7 +88,7 @@ div.edit-box a:hover { background: black; color: white }
 				
 				<div id="control-featured-background">
 					<ul>
-					<% control Home %>
+					<% control Home(4) %>
 						<li><a href="#" onclick="document.getElementById('featured-container').style.backgroundImage = 'url($FeatureImage.URL)';return false;"><img src="$FeatureImage.URL" width="79px" height="60px" alt="Thumbnail Image"/></a></li>
 						
 					<% end_control %>

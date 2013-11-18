@@ -7,51 +7,52 @@ class Page extends SiteTree {
 	public static $has_one = array(
 	);
 
-	  /*
+	/*
    * limits words to a number, but tries to validate the code
    */
-   public function getSummaryHTML ($ContentArea='Content', $limit = 10){
-      $m = 0;
-      $addEplisis = '';
-      $returnstr = '';
-      $returnArray = array();
-      $html = array();
-      $chars = preg_split('/(<[^>]*[^\/]>| )/i', $this->$ContentArea, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
-      foreach ($chars as $elemnt) {
-         // found start tag
-         if(preg_match('/^<(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt)){
-            preg_match('/^<(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
-            array_push($html, $matches[1]);// convert <p class=""> to p
-            array_push($returnArray, $elemnt);
-            // found end tag
-         } else if(preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt)){
-            preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
-            $testelement = array_pop ($html);
-            // match (ie: <p>etc</p>)
-            if($testelement==$elemnt[1]) array_pop($html);
-            array_push($returnArray, $elemnt);
-         } else {
-            // done
-            if($elemnt == ' ') continue;
-            array_push($returnArray, $elemnt);
-            $m++;
-            if($m > $limit) {
-               $addEplisis = '&hellip;';
-               break;
-            }
-         }
-      }
-      // convert start tags to end tags
-      $tmpr = '';
-      foreach ($html as $elemnt) {
-         $tmpr.='</'.$elemnt.'>';
-      }
-      return implode($returnArray, ' ') . $addEplisis . $tmpr;
-   }
-	
+	public function getSummaryHTML($ContentArea='Content', $limit = 10) {
+		$m = 0;
+		$addEplisis = '';
+		$returnstr = '';
+		$returnArray = array();
+		$html = array();
+		$chars = preg_split('/(<[^>]*[^\/]>| )/i', $this->$ContentArea, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
+		foreach ($chars as $elemnt) {
+			// found start tag
+			if (preg_match('/^<(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt)) {
+				preg_match('/^<(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
+				array_push($html, $matches[1]);// convert <p class=""> to p
+				array_push($returnArray, $elemnt);
+				// found end tag
+			} else if (preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt)) {
+					preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
+					$testelement = array_pop($html);
+					// match (ie: <p>etc</p>)
+					if ($testelement==$elemnt[1]) array_pop($html);
+					array_push($returnArray, $elemnt);
+				} else {
+				// done
+				if ($elemnt == ' ') continue;
+				array_push($returnArray, $elemnt);
+				$m++;
+				if ($m > $limit) {
+					$addEplisis = '&hellip;';
+					break;
+				}
+			}
+		}
+		// convert start tags to end tags
+		$tmpr = '';
+		foreach ($html as $elemnt) {
+			$tmpr.='</'.$elemnt.'>';
+		}
+		return implode($returnArray, ' ') . $addEplisis . $tmpr;
+	}
+
+
 }
 
-	
+
 
 
 class Page_Controller extends ContentController {
@@ -73,26 +74,28 @@ class Page_Controller extends ContentController {
 	 */
 	public static $allowed_actions = array (
 	);
-	
+
 	public function navlink() {
-		
+
 	}
+
 
 	public function init() {
 		parent::init();
-		// Note: you should use SS template require tags inside your templates 
-		// instead of putting Requirements calls here.  However these are 
+		// Note: you should use SS template require tags inside your templates
+		// instead of putting Requirements calls here.  However these are
 		// included so that our older themes still work
-		Requirements::themedCSS('layout'); 
-		Requirements::themedCSS('typography'); 
-		Requirements::themedCSS('form'); 
+		Requirements::themedCSS('layout');
+		Requirements::themedCSS('typography');
+		Requirements::themedCSS('form');
 	}
-	
-			function Home($limit=3) {
+
+
+	function Home($limit=3) {
 		$set = DataObject::get("HomePageTab", null, null, null, $limit);
-		
+
 		return $set;
 	}
-	
-}
 
+
+}
