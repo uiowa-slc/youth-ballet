@@ -1,10 +1,10 @@
 <?php
 class Page extends SiteTree {
 
-	public static $db = array(
+	private static $db = array(
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	);
 
 	/*
@@ -72,7 +72,7 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function navlink() {
@@ -89,7 +89,7 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('typography');
 		Requirements::themedCSS('form');
 	}
-		function Home($limit=4) {
+		function HomePageTabs($limit=4) {
 		//$set = DataObject::get("HomePageTab", null, null, null, $limit);
 		$set = HomePageTab::get()->limit($limit); 
 		return $set;

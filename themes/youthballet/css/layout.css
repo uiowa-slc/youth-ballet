@@ -107,7 +107,7 @@ h1.logo a {
 #featured-nav {
 	float: right;
 margin-top:10px;
-	width: 275px;
+	width: 375px;
 }
 
 #featured-nav ul li a {
@@ -138,7 +138,7 @@ margin-top:10px;
 }
 
 #control-featured-background{
-	margin-top: 180px;
+	margin-top: 240px;
 	
 }
 #control-featured-background li{
@@ -230,14 +230,12 @@ line-height:24px;}
 }
 
 #copyright-info {
-	padding:15px 0 0 0;
-	border-top:1px dotted #666;}
+	padding:15px 0 0 0;}
 
 /* Content Container Items */
 
 #content-container{
-	border-bottom: 1px dotted #666;	
-	padding-bottom: 55px;
+	padding-bottom: 20px;
 	min-height: 350px;
 }
 
@@ -263,16 +261,13 @@ line-height:24px;}
 /* Footer stuff */
 
 #footer-nav {
-float:right;}
+}
 	
 #footer{width:980px;
-float:left;
-	padding:0 0 60px 0;
-	margin-top: 25px;	
+	padding:0 0 60px 0;	
 }
 
 #copyright-info {
-	margin-top: 35px;	
 }
 
 #copyright-info p{

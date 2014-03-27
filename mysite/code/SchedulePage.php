@@ -3,19 +3,19 @@
 class SchedulePage extends Page {
 	
 	
-	public static $defaults = array(
+	private static $defaults = array(
 							 
 	
 	);
 	
-	public static $db = array(
+	private static $db = array(
 	
 
 	
 	
 	);
 	
-	public static $has_one = array(
+	private static $has_one = array(
 	
 	'FileUpload' => 'File'
 	
@@ -26,7 +26,8 @@ class SchedulePage extends Page {
 function getCMSFields() {
 	$fields = parent::getCMSFields();
 	
-		$fields->addFieldToTab('Root.File', new FileIFrameField('FileUpload','Upload file here',null,null,null,'assets/Uploads/schedules/'));
+		$fields->removeByName("Content");
+		$fields->addFieldToTab('Root.Main', new UploadField('FileUpload','Upload file here',null,null,null,'assets/Uploads/schedules/'));
 	
     return $fields;
 	

@@ -3,7 +3,7 @@
 <head>
 <% base_tag %>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> | $SiteConfig.Title</title>
+<title>$Title | $SiteConfig.Title</title>
 
 <link href=' http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 <link href=' http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
@@ -113,20 +113,7 @@ div.edit-box a:hover { background: black; color: white }
 	<div class="typography">
 		
 		<!-- end content-container -->
-		<div id="footer"> <img src="$ThemeDir/images/youthballetlogo_footer.png" id="youth-ballet-footer-logo" alt="Youth Ballet Footer" />
-			<div id="footer-nav">
-				<% loop Menu(1) %>
-					<div class="footer-block $URLSegment">
-						<a href="$Link"><h2>$MenuTitle</h2></a>
-						<ul>
-							<% loop Children %>
-								<li><a href="$Link">$MenuTitle</a></li>
-							<% end_loop %>
-						</ul>
-					</div>
-				<% end_loop %>
-			</div>
-			<div class="clear-left"></div>
+		<div id="footer">
 			<div id="copyright-info"> 	<a href="http://www.uiowa.edu"><img src="$ThemeDir/images/uiowalogo-footer.png" id="uiowa-footer-logo" alt="University of Iowa"/></a>
 				<p>The University of Iowa 2010. All rights reserved. <br />Department of Dance - E114 Halsey Hall - Iowa City, IA 52242 - 319-335-2228</p>
 				 <a href="http://clas.uiowa.edu"><img src="$ThemeDir/images/clas_black_arch_solid.png" id="clas-footer-logo" alt="CLAS" /></a>
@@ -140,7 +127,7 @@ div.edit-box a:hover { background: black; color: white }
 <!-- end body-wrapper -->
 <% if CurrentMember %>
 <div class="edit-box">
-<p><a href="$BaseHref/admin/show/{$ID}">Edit this page</a></p>
+<p><a href="{$CMSEditLink}">Edit this page</a></p>
 </div>
 <% end_if %>  
 </body>

@@ -1,0 +1,12 @@
+{
+	"name": "silverstripe/installer",
+	"description": "The SilverStripe Framework Installer",
+	"require": {
+		"php": ">=5.3.2",
+		"silverstripe/cms": "3.1.2",
+		"silverstripe/framework": "3.1.2",
+		"silverstripe/googlesitemaps": "*"
+	},
+
+	"minimum-stability": "dev"
+}
