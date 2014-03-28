@@ -104,9 +104,38 @@ h1.logo a {
 	height: 170px;	
 }
 
+#footer-nav {
+	float: left; 
+
+}
+
+#footer-nav ul li a {
+	color: white;
+	text-transform: uppercase;
+	font:lighter 27px 'Josefin Sans Std Light', Arial, Helvetica, sans-serif;
+}
+
+#footer-nav ul li {
+	display: inline;
+	margin-left: 10px;
+}
+
+#footer-nav ul {
+	margin:  38px 7px 10px -10px;
+
+}
+
+#footer-nav ul li a:hover {
+	color:#62D8F4;
+}
+
+#footer-nav ul li a.current {
+	color:#F93AF0;}
+	
+
 #featured-nav {
 	float: right;
-margin-top:10px;
+	margin-top:10px;
 	width: 375px;
 }
 
