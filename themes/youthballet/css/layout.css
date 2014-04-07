@@ -116,13 +116,31 @@ h1.logo a {
 }
 
 #footer-nav ul li {
-	display: inline;
+	/*display: inline;*/
 	margin-left: 10px;
+	max-width: 167px;
 }
 
 #footer-nav ul {
-	margin:  38px 7px 10px -10px;
+	float: left;
+}
 
+#footer-nav .About {
+	margin: 38px 24px 10px -10px;
+}
+
+#footer-nav .Home {
+	margin: 38px 22px 10px -10px;
+}
+
+#footer-nav .Programs{
+	margin: 38px 7px 10px -10px;
+}
+#footer-nav .Enrollment {
+	margin: 38px 44px 10px -10px;
+}
+#footer-nav .Contact {
+	margin: 38px 22px 10px -10px;
 }
 
 #footer-nav ul li a:hover {
@@ -131,13 +149,23 @@ h1.logo a {
 
 #footer-nav ul li a.current {
 	color:#F93AF0;}
+
+#footer-nav ul li .ListChild {
+	text-transform: none;
+	font: lighter 18px 'Josefin Sans Std Light', Arial, Helvetica, sans-serif;
+}
+
+.ListTitle {
 	
+}
 
 #featured-nav {
 	float: right;
 	margin-top:10px;
 	width: 375px;
 }
+
+
 
 #featured-nav ul li a {
 	color:white;

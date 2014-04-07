@@ -115,7 +115,7 @@ div.edit-box a:hover { background: black; color: white }
 		<!-- end content-container -->
 		<div id="footer">
 			<div id="footer-nav">
-				<%include Navigation %>
+				<%include FootNavigation %>
 			</div>
 			<div style="clear:both;"></div>
 			<div id="copyright-info"> 	<a href="http://www.uiowa.edu"><img src="$ThemeDir/images/uiowalogo-footer.png" id="uiowa-footer-logo" alt="University of Iowa"/></a>
