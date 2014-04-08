@@ -106,6 +106,8 @@ h1.logo a {
 
 #footer-nav {
 	float: left; 
+	margin-top: -25px;
+	padding-bottom: 25px;
 
 }
 
@@ -118,7 +120,7 @@ h1.logo a {
 #footer-nav ul li {
 	/*display: inline;*/
 	margin-left: 10px;
-	max-width: 167px;
+	max-width: 203px;
 }
 
 #footer-nav ul {
@@ -126,21 +128,21 @@ h1.logo a {
 }
 
 #footer-nav .About {
-	margin: 38px 24px 10px -10px;
+	margin: 38px 74px 10px -10px;
 }
 
 #footer-nav .Home {
-	margin: 38px 22px 10px -10px;
+	margin: 38px 72px 10px -10px;
 }
 
 #footer-nav .Programs{
-	margin: 38px 7px 10px -10px;
+	margin: 38px 34px 10px -10px;
 }
 #footer-nav .Enrollment {
-	margin: 38px 44px 10px -10px;
+	margin: 38px 74px 10px -10px;
 }
 #footer-nav .Contact {
-	margin: 38px 22px 10px -10px;
+	margin: 38px 32px 10px -10px;
 }
 
 #footer-nav ul li a:hover {
@@ -152,7 +154,9 @@ h1.logo a {
 
 #footer-nav ul li .ListChild {
 	text-transform: none;
-	font: lighter 18px 'Josefin Sans Std Light', Arial, Helvetica, sans-serif;
+	font: lighter 16px Arial, Helvetica, sans-serif;
+	line-height: 20px; 
+	color: #7e7e7e
 }
 
 .ListTitle {
@@ -293,7 +297,7 @@ line-height:24px;}
 
 #content-container{
 	padding-bottom: 20px;
-	min-height: 350px;
+	min-height: 574px;
 }
 
 .video {
