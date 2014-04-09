@@ -178,7 +178,7 @@ frameBorder="0" width="500" height="500" scrolling="no"></iframe>-->
 <!-- end content-container -->
 		<div id="footer">
 			<div id="copyright-info"> 	<a href="http://www.uiowa.edu"><img src="$ThemeDir/images/uiowalogo-footer.png" id="uiowa-footer-logo" alt="University of Iowa"/></a>
-				<p>The University of Iowa 2010. All rights reserved. <br />Department of Dance - E114 Halsey Hall - Iowa City, IA 52242 - 319-335-2228</p>
+				<p>The University of Iowa $Now.Year . All rights reserved. <br />Department of Dance - E114 Halsey Hall - Iowa City, IA 52242 - 319-335-2228</p>
 				 <a href="http://clas.uiowa.edu"><img src="$ThemeDir/images/clas_black_arch_solid.png" id="clas-footer-logo" alt="CLAS" /></a>
 			
 			</div>
