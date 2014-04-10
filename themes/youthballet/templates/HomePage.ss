@@ -120,25 +120,9 @@ div.edit-box a:hover { background: black; color: white }
 				
 				<div id="video">
 					<h2>Gallery</h2>
-					<div class="video">
-					
-					<object width="500" height="420"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fimubuddy%2Fsets%2F72157633396040193%2Fshow%2F&page_show_back_url=%2Fphotos%2Fimubuddy%2Fsets%2F72157633396040193%2F&set_id=72157633396040193&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=124984"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=124984" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fimubuddy%2Fsets%2F72157633396040193%2Fshow%2F&page_show_back_url=%2Fphotos%2Fimubuddy%2Fsets%2F72157633396040193%2F&set_id=72157633396040193&jump_to=" width="500" height="420"></embed></object>
-					
-					
-					<!--<object width="500" height="285"><param name="movie" value="http://www.youtube.com/v/6bz6HkV3JIg&amp;hl=en_US&amp;fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/6bz6HkV3JIg&amp;hl=en_US&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="285"></embed></object>-->
-					
-					
- <!--<iframe align="center" 
-src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=imubuddy&set_id=72157624514198157&text=" 
-frameBorder="0" width="500" height="500" scrolling="no"></iframe>-->
-
-<!--<img style="visibility:hidden;width:0px;height:0px;" alt="counter" border=0 width=0 height=0 src="http://counters.gigya.com/wildfire/IMP/CXNID=2000002.11NXC/bT*xJmx*PTEyODEwMTY*NzQzNjYmcHQ9MTI4MTAxNjQ3NjU2NiZwPTkwMjA1MSZkPSZnPTEmb2Y9MA==.gif" /><object id="ci_62918_o" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="500" height="420"><param name="movie" value="http://apps.cooliris.com/embed/cooliris.swf"/><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><param name="bgColor" value="#121212" /><param name="flashvars" value="feed=api%3A%2F%2Fwww.flickr.com%2F%3Fuser%3D9717880%40N03%26album%3D72157624514198157&backgroundcolor=%23000000&style=dark&glowcolor=%23FFFFFF&numrows=2" /><param name="wmode" value="opaque" /><embed id="ci_62918_e" type="application/x-shockwave-flash" src="http://apps.cooliris.com/embed/cooliris.swf" width="500" height="420" allowFullScreen="true" allowScriptAccess="always" bgColor="#121212" flashvars="feed=api%3A%2F%2Fwww.flickr.com%2F%3Fuser%3D9717880%40N03%26album%72157633396040193&backgroundcolor=%23000000&style=dark&glowcolor=%23FFFFFF&numrows=2" wmode="opaque"></embed></object>-->
-
-<!--
-					<img style="visibility:hidden;width:0px;height:0px;" border=0 width=0 height=0 src="http://counters.gigya.com/wildfire/IMP/CXNID=2000002.11NXC/bT*xJmx*PTEyODA*MTgzNzA5NDUmcHQ9MTI4MDQxODM3NjA2OCZwPTkwMjA1MSZkPSZnPTEmb2Y9MA==.gif" /><object class="slideshow" id="ci_32920_o" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="500" height="400"><param name="movie" value="http://apps.cooliris.com/embed/cooliris.swf"/><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><param name="bgColor" value="#121212" /><param name="flashvars" value="feed=api%3A%2F%2Fwww.flickr.com%2F%3Fuser%3D9717880%imubuddy%26album%3D72157624514198157" /><param name="wmode" value="opaque" /><embed id="ci_32920_e" type="application/x-shockwave-flash" src="http://apps.cooliris.com/embed/cooliris.swf" width="500" height="400" allowFullScreen="true" allowScriptAccess="always" bgColor="#121212" flashvars="feed=api%3A%2F%2Fwww.flickr.com%2F%3Fuser%3D9717880%imubuddy%26album%3D72157624514198157" wmode="opaque"></embed></object>-->
-
-
-</div>
+					<div class="video">		
+						<iframe src="https://www.flickr.com/photos/imubuddy/12838039614/in/set-72157633396040193/player/" width="500" height="434" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+					</div>
 					
 				</div>
 			
@@ -177,15 +161,16 @@ frameBorder="0" width="500" height="500" scrolling="no"></iframe>-->
 		</div>
 <!-- end content-container -->
 		<div id="footer">
+			<div id="footer-nav">
+				<%include FootNavigation %>
+			</div>			
 			<div id="copyright-info"> 	<a href="http://www.uiowa.edu"><img src="$ThemeDir/images/uiowalogo-footer.png" id="uiowa-footer-logo" alt="University of Iowa"/></a>
 				<p>The University of Iowa $Now.Year . All rights reserved. <br />Department of Dance - E114 Halsey Hall - Iowa City, IA 52242 - 319-335-2228</p>
 				 <a href="http://clas.uiowa.edu"><img src="$ThemeDir/images/clas_black_arch_solid.png" id="clas-footer-logo" alt="CLAS" /></a>
 			
 			</div>
 			<div style="clear:both;"></div>
-			<div id="footer-nav">
-				<%include FootNavigation %>
-			</div>
+
 		</div>
 
 		<!-- End Layout/HomePage.ss -->
