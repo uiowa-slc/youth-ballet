@@ -19,8 +19,6 @@ vendor/composer/installed.json
 
 vendor/composer/installers/
 
-composer.lock
-
 cms/
 
 *.php
