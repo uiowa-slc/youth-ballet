@@ -22,3 +22,4 @@ vendor/composer/installers/
 cms/
 
 *.php
+assets/

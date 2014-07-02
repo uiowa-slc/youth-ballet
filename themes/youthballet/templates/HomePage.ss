@@ -9,8 +9,6 @@
 <link href=' http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'/>
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light' rel='stylesheet' type='text/css'/>
 <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css'/>
-<link rel="stylesheet" type="text/css" href="layout.css"/>
-<link rel="stylesheet" type="text/css" href="typography.css"/>
 <link rel="stylesheet" type="text/css" href="$ThemeDir/css/reset.css"/>
 <!--[if IE 7]><style type='text/css'>@import url($ThemeDir/css/ie7.css);</style><![endif]-->
 
@@ -75,7 +73,7 @@ div.edit-box a:hover { background: black; color: white }
 <div id="body-wrapper">
 	<div class="typography">
 		<!-- Layout/HomePage.ss -->
-		<div id="featured-container">
+		<div id="featured-container" style="background-image:url('$HomePageTabs.First.FeatureImage.URL') ;">
 			<div id="featured-content">
 			<h1 class="logo"><a href="$BaseHref">Youth Ballet &amp; School of Dance</a></h1>
 				<h2>The University of Iowa Youth<br /> Ballet and School of Dance is an<br /> incredible dance program.</h2>
