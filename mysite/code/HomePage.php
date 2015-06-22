@@ -2,12 +2,14 @@
 class HomePage extends Page {
 	private static $db = array(
 	    'Testimonial' => 'Text',
-		'Attribution' => 'Text'
+		'Attribution' => 'Text',
+		'Mission' => 'Text'
 	);
 	private static $has_one = array(
 	);
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
+		$fields->addFieldToTab("Root.Main", new TextareaField('Mission'));
 		$fields->addFieldToTab("Root.Main", new TextareaField('Testimonial'));
 		$fields->addFieldToTab("Root.Main", new TextField('Attribution'));
 		return $fields;

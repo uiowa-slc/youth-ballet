@@ -130,7 +130,7 @@ div.edit-box a:hover { background: black; color: white }
 			
 				<% if ChildrenOf(schedules) %>
 					<div id="announcements">
-					<h2>Programs/Handbook</h2>
+					<h2>Schedules/Handbook</h2>
 						<% include Announcements %>
 				</div>
 				
@@ -142,7 +142,7 @@ div.edit-box a:hover { background: black; color: white }
 				
 				<div id="mission">
 					<h2>Mission</h2>
-					<p>The University of Iowa Youth Ballet and School of Dance strives to serve the people of Iowa by providing high-quality outreach that enriches lives by encouraging and nuturing artistic expression and fostering the love and teaching of movement.  We are committed to providing excellent, technique appropriate, and challenging classes for all ability levels across dance disciplines.  We are dedicated to developing strong, well-rounded dancers and teachers of dance.</p>
+					<p>$Mission</p>
 				</div>
 		
 		
