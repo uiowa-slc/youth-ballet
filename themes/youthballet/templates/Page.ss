@@ -5,10 +5,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>$Title | $SiteConfig.Title</title>
 
-<link href=' http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-<link href=' http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css'>
+<link href=' https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+<link href=' https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="$ThemeDir/css/reset.css">
 <!--[if IE 7]><style type='text/css'>@import url($ThemeDir/css/ie7.css);</style><![endif]-->
 
