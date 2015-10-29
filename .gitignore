@@ -23,3 +23,7 @@ cms/
 
 *.php
 assets/
+
+siteconfig/
+
+reports/
