@@ -13,6 +13,11 @@
 		<div class="<% if $Children || $Parent %>col-lg-8 col-lg-pull-4 children<% else %>col-md-10 col-md-offset-1<% end_if %>">
 			<section id="main-content" tabindex="-1">
 				<h1>$Title</h1>
+					<h2>Mission</h2>
+					<p>$Mission</p>
+					<h2>Testimonials</h2>
+					<p class="testimonial">$Testimonial <a href="testimonials/">(read more...)</a></p>
+					<p class="parent">- $Attribution</p>	
 				$Content
 				$Form
 			</section>
