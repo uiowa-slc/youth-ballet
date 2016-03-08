@@ -4,48 +4,35 @@
  */
 class HomePageTab extends SiteTree {
 
-	private static $defaults = array( 
-	
+	private static $defaults = array(
+
 	);
-	
-	
 
-   private static $db = array(
+	private static $db = array(
 
+	);
 
+	private static $has_one = array(
+		'FeatureImage' => 'Image',
 
-   );
-   
-   
-   
-   private static $has_one = array(
-   	'FeatureImage' => 'Image'
-   
-   );
+	);
 
+	function getCMSFields() {
+		$fields = parent::getCMSFields();
 
+		$fields->addFieldToTab('Root.Images', new UploadField('FeatureImage', 'Feature Box Image 727x528'));
 
-function getCMSFields() {
-	$fields = parent::getCMSFields();
-	
-	$fields->addFieldToTab('Root.Images', new UploadField('FeatureImage', 'Feature Box Image 727x528'));
+		return $fields;
 
-	
-	
-    return $fields;
-	
-   }
-   
+	}
+
 }
- 
+
 class HomePageTab_Controller extends Page_Controller {
 
-function init() {
+	function init() {
 		parent::init();
-		
-		
-	
 	}
- 
+
 }
 ?>

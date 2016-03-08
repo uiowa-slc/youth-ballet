@@ -1,14 +1,13 @@
 <?php
 
 class EventPage extends Page {
-	
+
 	private static $db = array(
 		'Date' => 'Text',
 
 	);
 	private static $has_one = array(
-								      	'Picture' => 'Image'
-
+		'Picture' => 'Image',
 	);
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -17,15 +16,13 @@ class EventPage extends Page {
 		return $fields;
 	}
 }
- 
+
 class EventPage_Controller extends Page_Controller {
 
-function init() {
+	function init() {
 		parent::init();
-		
-		
-	
+
 	}
- 
+
 }
 ?>

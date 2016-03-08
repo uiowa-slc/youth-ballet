@@ -8,9 +8,9 @@ class Page extends SiteTree {
 	);
 
 	/*
-   * limits words to a number, but tries to validate the code
-   */
-	public function getSummaryHTML($ContentArea='Content', $limit = 10) {
+	 * limits words to a number, but tries to validate the code
+	 */
+	public function getSummaryHTML($ContentArea = 'Content', $limit = 10) {
 		$m = 0;
 		$addEplisis = '';
 		$returnstr = '';
@@ -21,18 +21,24 @@ class Page extends SiteTree {
 			// found start tag
 			if (preg_match('/^<(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt)) {
 				preg_match('/^<(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
-				array_push($html, $matches[1]);// convert <p class=""> to p
+				array_push($html, $matches[1]); // convert <p class=""> to p
 				array_push($returnArray, $elemnt);
 				// found end tag
 			} else if (preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt)) {
-					preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
-					$testelement = array_pop($html);
-					// match (ie: <p>etc</p>)
-					if ($testelement==$elemnt[1]) array_pop($html);
-					array_push($returnArray, $elemnt);
-				} else {
+				preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
+				$testelement = array_pop($html);
+				// match (ie: <p>etc</p>)
+				if ($testelement == $elemnt[1]) {
+					array_pop($html);
+				}
+
+				array_push($returnArray, $elemnt);
+			} else {
 				// done
-				if ($elemnt == ' ') continue;
+				if ($elemnt == ' ') {
+					continue;
+				}
+
 				array_push($returnArray, $elemnt);
 				$m++;
 				if ($m > $limit) {
@@ -44,16 +50,12 @@ class Page extends SiteTree {
 		// convert start tags to end tags
 		$tmpr = '';
 		foreach ($html as $elemnt) {
-			$tmpr.='</'.$elemnt.'>';
+			$tmpr .= '</' . $elemnt . '>';
 		}
 		return implode($returnArray, ' ') . $addEplisis . $tmpr;
 	}
 
-
 }
-
-
-
 
 class Page_Controller extends ContentController {
 
@@ -72,28 +74,15 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
+	private static $allowed_actions = array(
 	);
-
-	public function navlink() {
-
-	}
-
 
 	public function init() {
 		parent::init();
-		// Note: you should use SS template require tags inside your templates
-		// instead of putting Requirements calls here.  However these are
-		// included so that our older themes still work
-		Requirements::themedCSS('layout');
-		Requirements::themedCSS('typography');
-		Requirements::themedCSS('form');
 	}
-		function HomePageTabs($limit=4) {
-		//$set = DataObject::get("HomePageTab", null, null, null, $limit);
-		$set = HomePageTab::get()->limit($limit); 
+
+	public function HomePageTabs($limit = 4) {
+		$set = HomePageTab::get()->limit($limit);
 		return $set;
 	}
-
-
 }
