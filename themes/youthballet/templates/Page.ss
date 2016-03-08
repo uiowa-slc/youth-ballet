@@ -34,6 +34,7 @@
 	<![endif]-->
 </head>
 <body class="$ClassName shifter">
+	<% include UiowaBarBootstrap %>
 	<% include Header %>
 	$Layout
 	<% include Footer %>

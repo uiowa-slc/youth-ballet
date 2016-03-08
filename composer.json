@@ -6,8 +6,20 @@
 		"silverstripe/cms": "3.3.*@stable",
 		"silverstripe/framework": "3.3.*@stable",
 		"silverstripe/googlesitemaps": "*",
-		"jonom/silverstripe-betternavigator" : "*"
+		"jonom/silverstripe-betternavigator" : "*",
+		"jonom/focuspoint" : "*",
+		"silverstripe/blog" : "2.*",
+		"colymba/gridfield-bulk-editing-tools" : "*",
+		"undefinedoffset/sortablegridfield": "*",
+		"md/division-bar" : "*"
 	},
 
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
+
+        }
+    ]
 }

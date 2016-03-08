@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					//'division-bar/js/division-bar.js',
+					'division-bar/js/division-bar.js',
 					// '<%= project.src %>/js/plugins/jquery.flexslider.js',
 					// '<%= project.src %>/js/plugins/core.js',
 					// '<%= project.src %>/js/plugins/transition.js',
@@ -45,7 +45,8 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					style: 'compressed',
-					compass: true
+					compass: true,
+					loadPath: ['division-bar/scss/']
 				},
 				files: {
 					'<%= project.src %>/css/master.css': '<%= project.src %>/scss/master.scss',
