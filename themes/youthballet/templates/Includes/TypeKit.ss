@@ -1,2 +1,2 @@
-<script src="//use.typekit.net/haw1zch.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<script src="https://use.typekit.net/brz0rtm.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>

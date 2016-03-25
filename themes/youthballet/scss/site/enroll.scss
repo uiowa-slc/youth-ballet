@@ -1,0 +1,77 @@
+.enroll {
+	background-color: $link;
+	padding: 4em 0;
+	color: #fff;
+}
+.enroll .col1,
+.enroll .col2,
+.enroll .col3 {
+	float: left;
+	padding: 0 2em;
+}
+.enroll .col1 {
+	width: 20%;
+}
+.enroll .col2,
+.enroll .col3 {
+	width: 40%;
+}
+.enroll-link {
+	background-color: #000;
+	display: inline-block;
+	margin: 0 auto;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: bold;
+	transition: .1s ease-in-out;
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #222;
+	}
+}
+.col2 {
+	& h4 {
+		color: #fff;
+		font-size: 26px;
+		margin-top: 0;
+	}
+	& p {
+		font-size: 16px;
+	}
+}
+.testimonials .quote {
+	font-size: 23px;
+	margin-top: 0;
+	line-height: 1.7;
+	font-family: $heading-font;
+}
+.testimonials .cite {
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	& em {
+		text-transform: none;
+		font-style: italic;
+		font-size: 16px;
+		font-family: $heading-font;
+		display: block;
+		color: #fff;
+		letter-spacing: 0;
+	}
+}
+.testimonials .gallery-cell {
+	width: 100%;
+}
+
+
+
+
+
+
+
+

@@ -1,7 +1,10 @@
 <!-- Header -->
 <header class="header" role="banner">
 	<div class="container">
-		<%-- <span class="shifter-handle">Menu</span> --%>
+		<a href="{$BaseHref}">
+			<img src="{$ThemeDir}/images/youth-ballet-logo.png" alt="Youth Ballet">
+		</a>
+		<span class="shifter-handle">Menu</span>
+		<% include MainNav %>
 	</div>
 </header>
-<% include MainNav %>

@@ -1,0 +1,114 @@
+.nav-wrapper {
+	@media (max-width: $break-medium - 1) {
+  		display: none;
+	}
+}
+.main-nav, .main-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.main-nav li {
+	float: left;
+	position: relative;
+}
+.main-nav > li:before {
+	content:"";
+	position: absolute;
+	background-color: #666;
+	height: 13px;
+	width: 1px;
+	left: 0;
+	top: 17px;
+}
+.main-nav li.last:after {
+	content:"";
+	position: absolute;
+	background-color: #777;
+	height: 13px;
+	width: 1px;
+	right: 0;
+	top: 17px;
+}
+
+/* Top level nav items */
+.main-nav li a {
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 10px 29px;
+	@media (min-width: $break-medium) {
+		font-size: 16px;
+		padding: 10px 15px;
+	}
+	@media (min-width: $break-large) {
+		padding: 10px 25px;
+		font-size: 18px;
+	}
+	@media (min-width: $break-xlarge) {
+		padding: 10px 37px;
+	}
+}
+/*.lt-ie10 .main-nav li a {
+	padding: 10px 14px;
+	@media (min-width: $break-large) {
+		padding: 10px 25px;
+	}
+}*/
+/* Top level hover state, preserve hover state when hovering dropdown  */
+.main-nav li > a:hover,
+.main-nav li > a:focus,
+.main-nav li:focus > a,
+.main-nav li:hover > a {
+	color: $link;
+}
+.main-nav .active a {
+	color: $link;
+}
+
+
+
+
+
+/* Mobile Toggle */
+.menu-icon {
+	text-indent: 38px;
+	width: 50px;
+	height: 50px;
+	display: block;
+	line-height: 50px;
+	padding: 0;
+	color: white;
+	transform: translate3d(0, 0, 0);
+	text-decoration: none;
+	cursor: pointer;
+	position: absolute;
+	top: 16px;
+	right: 50px;
+}
+.menu-icon span::after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 0;
+	top: 50%;
+	margin-top: -7px;
+	left: 13px;
+	box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
+	width: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

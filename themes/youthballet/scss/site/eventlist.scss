@@ -1,0 +1,80 @@
+/* Interior Pages */
+.interiorEventList {
+	border-top: 1px solid #eee;
+	padding: 4em 0;
+	background: #fff;
+	text-align: center;
+}
+.eventlist-heading {
+	text-align: center;
+	margin: 0;
+	font-family: $body-font;
+	margin-bottom: 1em;
+	font-size: 24px
+}
+.interior-events {
+	padding: 0 4em;
+}
+.interior-events .gallery-cell {
+	width: 100%;
+	padding: .5em;
+	@media (min-width: $break-medium) {
+		width: 50%;
+	}
+	@media (min-width: $break-large) {
+		width: 33.333%;
+	}
+}
+.interior-events .flickity-prev-next-button {
+	background: #000;
+}
+.interior-events .flickity-prev-next-button .arrow {
+	fill: #fff;
+}
+#event-calendar-events li {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 2em;
+	padding-top: .5em;
+}
+
+.eventlist-date {
+	text-align: right;
+	border-right: 1px solid #ddd;
+	float: left;
+	padding-right: 10px;
+	width: 30%;
+	margin: 0;
+	font-family: $heading-font;
+	font-size: 26px;
+}
+.eventlist-date .month {
+	display: block;
+	font-size: 18px;
+}
+.eventlist-title {
+	text-align: left;
+	font-weight: normal;
+	margin: 0;
+	float: left;
+	width: 70%;
+	padding-left: 20px;
+	font-size: 26px;
+}
+.calendarlink {
+	background-color: #000;
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 6em;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+	transition: .1s ease-in-out;
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #222;
+	}
+}

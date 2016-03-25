@@ -1,21 +1,29 @@
 <?php
 /**
- * Defines the HomePage page type
+ * Defines the InteriorPage page type
  */
 
 class InteriorPage extends Page {
 
 	private static $db = array(
-		'ImageCaption' => 'Text',
+
 	);
 	private static $has_one = array(
-		'ContentImage' => 'Image',
+		"Photo" => "Image",
+	);
+	private static $has_many = array(
+		'PhotoEntries' => 'PhotoEntry'
 	);
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab('Root.Images', new TextField('ImageCaption', 'Image Caption'));
-		$fields->addFieldToTab('Root.Images', new UploadField('ContentImage', 'Event Image 469x331 pixels'));
+		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Header Photo"));
+
+		$gridFieldConfig = GridFieldConfig_RelationEditor::create()->addComponents();
+		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
+		$gridField = new GridField("PhotoEntries", "Photos:", $this->PhotoEntries(), $gridFieldConfig);
+		$fields->addFieldToTab("Root.Gallery", $gridField);
+
 		return $fields;
 	}
 }

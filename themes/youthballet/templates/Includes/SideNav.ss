@@ -2,123 +2,61 @@
 
 	<div class="subnavigation">
 
-	<% if Menu(4) %>
 		<h4 id="handle2">Navigation</h4>
-		<nav class="block sec-nav current" data-navigation-handle="#handle2">
-			<% with Level(3) %>
-				<% if $LinkOrCurrent = "current" %>
-					<h4 class="active">$MenuTitle</h4>
-				<% else %>
-					<h4><a href="$Link">$MenuTitle</a></h4>
-				<% end_if %>
-			<% end_with %>
-			<ul class="first-level">
-				<% loop Menu(4) %>
-					<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a>
-						<% if $LinkOrSection = "section" && Children %>
-							<ul class="second-level">
-								<% loop Children %>
-									<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
-										<a href="$Link">$MenuTitle</a>
-										<% if $LinkOrSection = "section" && Children %>
-											<ul class="third-level">
-												<% loop Children %>
-													<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
-														<a href="$Link">$MenuTitle</a>
-													</li>
-												<% end_loop %>
-											</ul>
-										<% end_if %>
-									</li>
-								<% end_loop %>
-							</ul>
-						<% end_if %>
-					</li>
-				<% end_loop %>
-			</ul>
-		</nav>
-	<% else_if Menu(3) %>
-		<h4 id="handle2">Navigation</h4>
-		<nav class="block sec-nav current" data-navigation-handle="#handle2">
-			<% with Level(2) %>
-				<% if $LinkOrCurrent = "current" %>
-					<h4 class="active">$MenuTitle</h4>
-				<% else %>
-					<h4><a href="$Link">$MenuTitle</a></h4>
-				<% end_if %>
-			<% end_with %>
-			<ul class="first-level">
-				<% loop Menu(3) %>
-					<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a>
-						<% if $LinkOrSection = "section" && Children %>
-							<ul class="second-level">
-								<% loop Children %>
-									<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
-										<a href="$Link">$MenuTitle</a>
-										<% if $LinkOrSection = "section" && Children %>
-											<ul class="third-level">
-												<% loop Children %>
-													<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
-														<a href="$Link">$MenuTitle</a>
-													</li>
-												<% end_loop %>
-											</ul>
-										<% end_if %>
-									</li>
-								<% end_loop %>
-							</ul>
-						<% end_if %>
-					</li>
-				<% end_loop %>
-			</ul>
-		</nav>
-	<% end_if %>
-
-
-	<% if Menu(3) %>
-		<h4 id="handle2">Navigation</h4>
-		<nav class="block sec-nav current" data-navigation-handle="#handle2">
-			<h2>Related Sections</h2>
-			<ul class="first-level">
-				<% loop Menu(2) %>
-					<li><a href="$Link">$MenuTitle</a></li>
-				<% end_loop %>
-			</ul>
-		</nav>
-	<% else %>
-		<h4 id="handle2">Navigation</h4>
-		<nav class="block sec-nav current" data-navigation-handle="#handle2">
+		<%-- <% if Menu(2) %>
 			<% with Level(1) %>
-				<% if $LinkOrCurrent = "current" %>
-					<h4 class="active">$MenuTitle</h4>
-				<% else %>
-					<h4><a href="$Link">$MenuTitle</a></h4>
-				<% end_if %>
+				<h3 class="section-title">
+					<% if $LinkOrCurrent = "current" %>$MenuTitle<% else %><a href="$Link">$MenuTitle</a><% end_if %>
+				</h3>
 			<% end_with %>
-			<ul class="first-level">
-				<% loop Menu(2) %>
-					<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a></li>
-				<% end_loop %>
-			</ul>
-		</nav>
+		<% end_if %> --%>
+
+<% if Menu(2) %>
+
+<nav class="block sec-nav current" data-navigation-handle="#handle2">
+	<% if Menu(2) %>
+		<% with Level(1) %>
+			<h5 class="section-title">
+				<% if $LinkOrCurrent = "current" %>$MenuTitle<% else %><a href="$Link">$MenuTitle</a><% end_if %>
+			</h5>
+		<% end_with %>
 	<% end_if %>
+	<ul class="first-level">
+			<%-- <% with Level(1) %>
+				<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a></li>
+			<% end_with %> --%>
+			<% loop Menu(2) %>
+				<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a>
 
+				<%-- third level nav option 1 --%>
+					<% if $LinkOrSection = "section" && Children %>
+						<ul class="second-level">
+							<% loop Children %>
+								<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
+									<a href="$Link">$MenuTitle</a>
+									<% if $LinkOrSection = "section" && Children %>
+										<ul class="third-level">
+											<% loop Children %>
+												<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
+													<a href="$Link">$MenuTitle</a>
+												</li>
+											<% end_loop %>
+										</ul>
+									<% end_if %>
 
+								</li>
+							<% end_loop %>
+						</ul>
+					<% end_if %>
 
+				<%-- end third level nav option 1 --%>
+
+				</li>
+			<% end_loop %>
+
+	</ul>
+</nav>
+<% end_if %>
 
 	</div><!-- end .subnavigation -->
 </div><!-- end Naver -->
-
-
-
-
-<% if SideBarView %>
-	<div id="Sidebar" class="browsebydate tablet-hide">
-		$SideBarView
-	</div>
-<% end_if %>
-
-
-
-
-

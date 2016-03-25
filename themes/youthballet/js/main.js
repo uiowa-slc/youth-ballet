@@ -16,19 +16,46 @@ $(document).ready(function() {
 		maxWidth: "979px"
 	});
 
-	// Photo Gallery using flexslider
-	$('.flexslider').flexslider({
-		smoothHeight: true,
-		slideshow: false
+	/* Photo Gallery */
+	$('.photo-gallery').flickity({
+		wrapAround: true,
+		imagesLoaded: true,
+		lazyLoad: true,
+		lazyLoad: 2,
+		initialIndex: 1,
+		selectedAttraction: 0.01,
+		friction: 0.15,
+		pageDots: false,
+		arrowShape: {
+			x0: 30,
+			x1: 60, y1: 30,
+			x2: 65, y2: 30,
+			x3: 50
+		}
 	});
 
-	$('.lightbox').lightbox();
+	/* Events List */
+	$('.interior-events').flickity({
+		initialIndex: 1,
+		selectedAttraction: 0.01,
+		friction: 0.15,
+		pageDots: false,
+		contain: true,
+		arrowShape: {
+			x0: 30,
+			x1: 65, y1: 25,
+			x2: 65, y2: 25,
+			x3: 65
+		}
+	});
 
-	$('.action-link').click(function() {
-		$(this).toggleClass('open');
-		$(this).parent().next('.action-content').slideToggle();
-		// $('.action-content').slideToggle();
-		return false;
+	/* Testimonials */
+	$('.testimonials').flickity({
+		wrapAround: true,
+		pageDots: false,
+		prevNextButtons: false,
+		autoPlay: true,
+		autoPlay: 8000
 	});
 
 

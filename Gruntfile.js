@@ -18,16 +18,17 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'division-bar/js/division-bar.js',
+					// 'division-bar/js/division-bar.js',
 					// '<%= project.src %>/js/plugins/jquery.flexslider.js',
-					// '<%= project.src %>/js/plugins/core.js',
-					// '<%= project.src %>/js/plugins/transition.js',
-					// '<%= project.src %>/js/plugins/jquery.fs.shifter.js',
+					'<%= project.src %>/js/plugins/core.js',
+					'<%= project.src %>/js/plugins/transition.js',
+					'<%= project.src %>/js/plugins/jquery.fs.shifter.js',
 					// '<%= project.src %>/js/plugins/lightbox.js',
-					// '<%= project.src %>/js/plugins/mediaquery.js',
-					// '<%= project.src %>/js/plugins/navigation.js',
-					// '<%= project.src %>/js/plugins/swap.js',
-					// '<%= project.src %>/js/plugins/touch.js',
+					'<%= project.src %>/js/plugins/mediaquery.js',
+					'<%= project.src %>/js/plugins/navigation.js',
+					'<%= project.src %>/js/plugins/swap.js',
+					'<%= project.src %>/js/plugins/touch.js',
+					'<%= project.src %>/js/plugins/flickity.pkgd.js',
 					'<%= project.src %>/js/main.js'
 				],
 				dest: '<%= project.src %>/js/build/production.js'
@@ -45,8 +46,7 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					style: 'compressed',
-					compass: true,
-					loadPath: ['division-bar/scss/']
+					compass: true
 				},
 				files: {
 					'<%= project.src %>/css/master.css': '<%= project.src %>/scss/master.scss',

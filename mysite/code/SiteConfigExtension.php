@@ -6,10 +6,7 @@ class SiteConfigExtension extends DataExtension {
 		'TwitterLink' => 'Text',
 		'FacebookLink' => 'Text',
 		'FlickrLink' => 'Text',
-		'InstagramLink' => 'Text',
 		'YoutubeLink' => 'Text',
-		'PinterestLink' => 'Text',
-		'WordpressLink' => 'Text',
 		'Analytics' => 'Text',
 		'Address1' => 'Text',
 		'Phone' => 'Text',
@@ -26,9 +23,6 @@ class SiteConfigExtension extends DataExtension {
 		$fields->addFieldToTab('Root.Main', new TextField('FacebookLink', 'Facebook Account URL'));
 		$fields->addFieldToTab('Root.Main', new TextField('FlickrLink', 'Flickr Account URL'));
 		$fields->addFieldToTab('Root.Main', new TextField('YoutubeLink', 'YouTube Account URL'));
-		$fields->addFieldToTab('Root.Main', new TextField('InstagramLink', 'Instagram Account URL'));
-		$fields->addFieldToTab('Root.Main', new TextField('PinterestLink', 'Pinterest Account URL'));
-		$fields->addFieldToTab('Root.Main', new TextField('WordpressLink', 'Wordpress Account URL'));
 		$fields->addFieldToTab('Root.Main', new TextField('Address1', 'Address'));
 		$fields->addFieldToTab('Root.Main', new TextField('Phone', 'Phone Number'));
 		$fields->addFieldToTab('Root.Main', new TextField('Email', 'Email'));

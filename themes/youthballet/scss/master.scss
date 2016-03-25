@@ -22,13 +22,16 @@
 @import "plugins/shifter";
 @import "plugins/navigation";
 @import "plugins/lightbox";
-@import "plugins/flexslider";
+@import "plugins/flickity";
 
-@import "_uiowa-bar-bootstrap";
+// @import "_uiowa-bar-bootstrap";
 
 /* Layout
 -------------------------------------------*/
 @import "site/childpages";
+@import "site/photogallery";
+@import "site/eventlist";
+@import "site/enroll";
 @import "site/searchresults";
 @import "site/sidebaritem";
 @import "site/news";
