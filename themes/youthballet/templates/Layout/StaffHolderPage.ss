@@ -15,8 +15,22 @@
 				<h1>$Title</h1>
 				$Content
 				$Form
+				<!-- Loop Staff Members -->
+				<ul class="staffholder justify justify-3">
+					<% loop $Children %>
+						<li class="justify-item">
+							<% if $Photo %>
+								<a href="$Link"><img src="$Photo.CroppedImage(300,400).URL" alt="$Title"></a>
+							<% end_if %>
+							<h4 class="title"><a href="$Link">$Title</a></h4>
+							<% if $Position %><em class="position">$Position</em><% end_if %>
+						</li>&nbsp;
+					<% end_loop %>
+					<li class="justify-item filler"></li>
+					<li class="justify-item filler"></li>
+				</ul>
+				<!-- end Loop Staff Members -->
 			</section>
-			<% include ChildPages %>
 		</div><!-- end .col -->
 	</div><!-- end .row -->
 </main><!-- end .container -->

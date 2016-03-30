@@ -1,4 +1,7 @@
+
 .nav-wrapper {
+	float: right;
+	margin-top: 20px;
 	@media (max-width: $break-medium - 1) {
   		display: none;
 	}
@@ -12,62 +15,102 @@
 	float: left;
 	position: relative;
 }
-.main-nav > li:before {
-	content:"";
-	position: absolute;
-	background-color: #666;
-	height: 13px;
-	width: 1px;
-	left: 0;
-	top: 17px;
-}
-.main-nav li.last:after {
-	content:"";
-	position: absolute;
-	background-color: #777;
-	height: 13px;
-	width: 1px;
-	right: 0;
-	top: 17px;
-}
 
 /* Top level nav items */
 .main-nav li a {
 	color: #fff;
 	display: block;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 600;
-	padding: 10px 29px;
-	@media (min-width: $break-medium) {
-		font-size: 16px;
-		padding: 10px 15px;
-	}
-	@media (min-width: $break-large) {
-		padding: 10px 25px;
-		font-size: 18px;
-	}
-	@media (min-width: $break-xlarge) {
-		padding: 10px 37px;
-	}
+	letter-spacing: 1px;
+	padding: 10px 15px;
 }
-/*.lt-ie10 .main-nav li a {
-	padding: 10px 14px;
-	@media (min-width: $break-large) {
-		padding: 10px 25px;
-	}
-}*/
 /* Top level hover state, preserve hover state when hovering dropdown  */
 .main-nav li > a:hover,
 .main-nav li > a:focus,
 .main-nav li:focus > a,
 .main-nav li:hover > a {
-	color: $link;
+	color: #fff;
+	outline: 0;
 }
-.main-nav .active a {
-	color: $link;
-}
+// .main-nav >li.active:before {
+// 	content: '';
+// 	display: block;
+// 	position: absolute;
+// 	left: 0;
+// 	right: 0;
+// 	top: 0;
+// 	width: 0;
+// 	margin: 0 auto;
+// 	border-bottom: 2px solid #fff;
+// 	-webkit-transition: width .2s ease-out;
+// 	transition: width .2s ease-out;
+// }
 
 
+/* Dropdowns */
+.main-nav ul {
+	position: absolute;
+	top: auto;
+	left: -9999px;
+	margin-left: -90px;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+	transition: opacity .2s linear;
+	min-width: 200px;
+	background: #fff;
+	border-top: 3px solid $link;
+}
+/* Arrow */
+.main-nav ul:before {
+	content: "";
+	display: block;
+	height: 10px;
+	left: 50%;
+	margin-left: -10px;
+	position: absolute;
+	top: -10px;
+	width: 10px;
+	z-index: 1;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid $link;
+}
+.main-nav li:hover ul,
+.main-nav li:focus ul,
+ul.show-menu {
+	left: 50%;
+	opacity: 1;
+}
+.main-nav ul li {
+	border-top: 1px solid #e5e5e5;
+	float: none;
+	position: static;
+}
+.main-nav ul li:before, .main-nav ul li.last:after {
+	display: none;
+}
+.main-nav ul li:first-of-type {
+	border-top: none;
+}
+.main-nav ul a {
+	color: #333;
+	float: none;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 1.3;
+	padding: 15px 15px;
+	text-align: left;
+	text-transform: none;
+}
+.main-nav ul a:hover,
+.main-nav ul a:focus,
+.main-nav ul li.active a {
+	background-color: #fafafa;
+	color: $link;
+}
 
 
 

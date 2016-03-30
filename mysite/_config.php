@@ -7,6 +7,10 @@ global $database;
 $database = 'youthballet';
 
 require_once("conf/ConfigureFromEnv.php");
+
+Calendar::add_extension('CalendarExtension');
+CalendarEvent::add_extension('CalendarEventExtension');
+
 MySQLDatabase::set_connection_charset('utf8');
 
 // Set the current theme. More themes can be downloaded from
@@ -24,3 +28,4 @@ SiteConfig::add_extension('SiteConfigExtension');
 if(Director::isLive()) {
 	Director::forceSSL();
 }
+GD::set_default_quality(80);

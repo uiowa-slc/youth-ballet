@@ -7,7 +7,7 @@
 		<% loop $PhotoEntries %>
 			<div class="gallery-cell">
 				<div class="scale">
-					<img data-flickity-lazyload="$Photo.CroppedImage(900,600).URL" alt="<% if $ImageCaption %>$ImageCaption<% end_if %>">
+					<img data-flickity-lazyload="$Photo.CroppedFocusedImage(900,600).URL" alt="<% if $ImageCaption %>$ImageCaption<% end_if %>">
 					<% if $ImageCaption %>
 						<p class="photo-caption">$ImageCaption</p>
 					<% end_if %>
