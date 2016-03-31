@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "747c0663159a42c070ed07b937129e8a",
+    "content-hash": "8dd587cab08b363094f65b1392ebc3b0",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -54,12 +55,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6aac6a0a931ad06780fa7c574f27178d48109ec7"
+                "reference": "a24be9c9a4f3d87e272b7bc33a93a84e63393004"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6aac6a0a931ad06780fa7c574f27178d48109ec7",
-                "reference": "6aac6a0a931ad06780fa7c574f27178d48109ec7",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a24be9c9a4f3d87e272b7bc33a93a84e63393004",
+                "reference": "a24be9c9a4f3d87e272b7bc33a93a84e63393004",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +146,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-03-23 16:25:33"
+            "time": "2016-03-31 17:23:21"
         },
         {
             "name": "johngrogg/ics-parser",
@@ -432,12 +433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "90871fd40259e8a0b3c7c6db5f8717966df631f5"
+                "reference": "5d224dcfef21c00fe9751aff5c09ce024fc9a01d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/90871fd40259e8a0b3c7c6db5f8717966df631f5",
-                "reference": "90871fd40259e8a0b3c7c6db5f8717966df631f5",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/5d224dcfef21c00fe9751aff5c09ce024fc9a01d",
+                "reference": "5d224dcfef21c00fe9751aff5c09ce024fc9a01d",
                 "shasum": ""
             },
             "require": {
@@ -468,7 +469,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2016-03-24 00:23:36"
+            "time": "2016-03-29 00:28:13"
         },
         {
             "name": "silverstripe/framework",
@@ -774,12 +775,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "37853881dc4b0cb0ee6d8fa74126554bf903862c"
+                "reference": "8fa377ed650a9976a90abd9f94e3335027de5b32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/37853881dc4b0cb0ee6d8fa74126554bf903862c",
-                "reference": "37853881dc4b0cb0ee6d8fa74126554bf903862c",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/8fa377ed650a9976a90abd9f94e3335027de5b32",
+                "reference": "8fa377ed650a9976a90abd9f94e3335027de5b32",
                 "shasum": ""
             },
             "require": {
@@ -829,7 +830,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2016-03-23 21:15:29"
+            "time": "2016-03-30 00:59:11"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
