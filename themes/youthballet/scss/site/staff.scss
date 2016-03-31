@@ -24,7 +24,7 @@ Staff Member Page
 	}
 }
 .staffmember-img {
-	box-shadow: -5px 5px 0 #cfc8b2;
+	box-shadow: -5px 5px 0 $link;
 	@media (min-width: $break-small) {
 		float: right;
 		margin: 0 0 15px 30px;

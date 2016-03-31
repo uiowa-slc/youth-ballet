@@ -73,6 +73,18 @@ Layout
 	overflow: hidden;
 	position: relative;
 }
+.page-photo:after {
+	content:'';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.70) 10%, rgba(0,0,0,0) 40%);
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 40%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 40%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 );
+}
 .page-photo img {
 	display: block;
 	width: 100%;

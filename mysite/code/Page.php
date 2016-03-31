@@ -5,58 +5,20 @@ class Page extends SiteTree {
 	);
 
 	private static $has_one = array(
+		"BackgroundPhoto" => "Image",
 	);
 
-	/*
-	 * limits words to a number, but tries to validate the code
-	 */
-	public function getSummaryHTML($ContentArea = 'Content', $limit = 10) {
-		$m = 0;
-		$addEplisis = '';
-		$returnstr = '';
-		$returnArray = array();
-		$html = array();
-		$chars = preg_split('/(<[^>]*[^\/]>| )/i', $this->$ContentArea, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
-		foreach ($chars as $elemnt) {
-			// found start tag
-			if (preg_match('/^<(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt)) {
-				preg_match('/^<(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
-				array_push($html, $matches[1]); // convert <p class=""> to p
-				array_push($returnArray, $elemnt);
-				// found end tag
-			} else if (preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt)) {
-				preg_match('/^<\/(p|h1|h2|h3|h4|h5|h6|q|b|i|strong|em)(.*)>$/', $elemnt, $matches);
-				$testelement = array_pop($html);
-				// match (ie: <p>etc</p>)
-				if ($testelement == $elemnt[1]) {
-					array_pop($html);
-				}
+	public function getCMSFields(){
+		$fields = parent::getCMSFields();
 
-				array_push($returnArray, $elemnt);
-			} else {
-				// done
-				if ($elemnt == ' ') {
-					continue;
-				}
+		$fields->removeByName("Metadata");
+		$fields->addFieldToTab("Root.Main", new UploadField("BackgroundPhoto", "Background Photo"), "Content");
 
-				array_push($returnArray, $elemnt);
-				$m++;
-				if ($m > $limit) {
-					$addEplisis = '&hellip;';
-					break;
-				}
-			}
-		}
-		// convert start tags to end tags
-		$tmpr = '';
-		foreach ($html as $elemnt) {
-			$tmpr .= '</' . $elemnt . '>';
-		}
-		return implode($returnArray, ' ') . $addEplisis . $tmpr;
+		return $fields;
+
 	}
 
 }
-
 class Page_Controller extends ContentController {
 
 	/**
@@ -74,15 +36,13 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array(
+	private static $allowed_actions = array (
 	);
 
 	public function init() {
 		parent::init();
+		// You can include any CSS or JS required by your project here.
+		// See: http://doc.silverstripe.org/framework/en/reference/requirements
 	}
 
-	public function HomePageTabs($limit = 4) {
-		$set = HomePageTab::get()->limit($limit);
-		return $set;
-	}
 }

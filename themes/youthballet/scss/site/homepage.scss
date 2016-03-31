@@ -11,10 +11,10 @@
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.8) 100%);
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.8) 100%);
-background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.8) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=0 );
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.70) 10%, rgba(0,0,0,0) 30%);
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 30%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 30%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 );
 
 }
 .main-photo .inner {
@@ -27,7 +27,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', e
 	text-align: center;
 	& h3 {
 		margin: 0;
-		font-size: 50px;
+		font-size: 54px;
 		text-align: center;
 		color: #fff;
 		text-transform: uppercase;
@@ -46,7 +46,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', e
 	border: 2px solid #fff;
 	font-size: 15px;
 	font-weight: bold;
-	background: rgba(0,0,0,.2);
+	background: rgba(0,0,0,.3);
 }
 
 
@@ -59,7 +59,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', e
 	padding-bottom: 230px;
 	& p {
 		width: 80%;
-		font-size: 20px;
+		font-size: 19px;
 		margin: 0 auto;
 	}
 }
@@ -97,7 +97,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', e
 	}
 	& h3 {
 		font-family: $body-font;
-		font-size: 40px;
+		font-size: 38px;
 		color: #111;
 		margin-top: 0;
 		margin-bottom: 0;
@@ -201,5 +201,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', e
 	 }
 }
 
+/* Announcements */
+.announcements {
+	padding: 1em;
+	margin-top: -120px;
+	& h3 {
+		text-transform: uppercase;
+		font-family: $body-font;
+		font-weight: 900;
+		font-size: 31px;
+		margin-bottom: 1.5em;
+	}
+	& a {
+		color: #fff;
+	}
+	& ul {
+		list-style: none;
+		margin: 0;
+		& li {
+			padding: 15px 0;
+			border-bottom: 1px solid rgba(255,255,255,.2);
+			& a {
+				color: #fff;
+
+			}
+		}
+	}
+	& .date {
+		display: block;
+		font-weight: 900;
+		margin-bottom: 5px;
+	}
+	& .viewall {
+		& a {
+			font-size: 14px;
+			text-decoration: underline;
+		}
+	}
+}
 
 

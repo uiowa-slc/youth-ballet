@@ -5,12 +5,12 @@ class CalendarExtension extends DataExtension {
 	);
 
 	private static $has_one = array(
-		"Photo" => "Image",
+
 	);
 
-	public function getCMSFields() {
-		$fields = parent::getCMSFields();
-		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Header Photo"));
+	public function updateCMSFields(FieldList $fields) {
+		//$fields = parent::getCMSFields();
+
 
 		return $fields;
 	}

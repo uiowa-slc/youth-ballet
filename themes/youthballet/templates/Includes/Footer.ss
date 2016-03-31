@@ -1,5 +1,10 @@
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
+	<div class="container">
+		<img src="{$ThemeDir}/images/footer.jpg" alt="">
+	</div>
+</footer>
+<%-- <footer class="footer" role="contentinfo">
 	<span class="stripes"></span>
 	<div class="footer-social">
 		<div class="container">
@@ -153,4 +158,4 @@
 			<p>&copy; The University of Iowa {$Now.Year}. All rights reserved. <% if $SiteConfig.Address1 %>$SiteConfig.Address1 <% end_if %><% if $SiteConfig.Phone %>| $SiteConfig.Phone <% end_if %><% if $SiteConfig.Email %> | <a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a><% end_if %> <a href="http://www.uiowa.edu/homepage/online-privacy-information" target="_blank">Privacy Information</a>
 		</div>
 	</div>
-</footer>
+</footer> --%>

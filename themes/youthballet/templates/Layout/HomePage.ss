@@ -1,7 +1,7 @@
 <div class="main-photo">
 	<div class="inner">
 		<h3>Take the leap</h3>
-		<a href="#" class="main-photo-link">Enroll Online Today</a>
+		<a href="{$BaseHref}enrollment" class="main-photo-link">Enroll Online Today</a>
 	</div>
 </div>
 
@@ -21,8 +21,8 @@
 					<img src="{$ThemeDir}/images/program-children.jpg" alt="Children">
 					<div class="content">
 						<h3>Children</h3>
-						<p>Our children's program introduces students to basic movement exploration.<br />For students ages 2-6.</p>
-						<a href="#">Explore</a>
+						<p>Introduces students to basic movement exploration.<br />For students ages 2-6.</p>
+						<a href="{$BaseHref}programs/childrens-division/">Explore</a>
 					</div>
 				</div>
 			</div>
@@ -32,7 +32,7 @@
 					<div class="content">
 						<h3>Youth Ballet</h3>
 						<p>Our youth ballet curriculum consists of five levels of ballet technique, prepointe classes, and pointe classes.</p>
-						<a href="#">Explore</a>
+						<a href="{$BaseHref}programs/youth-ballet-program/">Explore</a>
 					</div>
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 					<div class="content">
 						<h3>Teen & Adult</h3>
 						<p>Classes include Adult Beginner and Adult Intermediate levels in ballet, modern, jazz, and body ocnditioning.</p>
-						<a href="#">Explore</a>
+						<a href="{$BaseHref}programs/teen-and-adult-classes/">Explore</a>
 					</div>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 						<img src="{$ThemeDir}/images/tour.jpg" alt="Tour the studio">
 						<div class="">
 							<h5>Tour the Studio</h5>
-							<h4>Our Facilities</h4>
+							<h4><a href="{$BaseHref}about/our-facilities/">Our Facilities</a></h4>
 							<p>With its marley floors, high ceilings, and abundant natural light, Halsey Hall provides an inspiring and professional dance space.</p>
 						</div>
 					</div>
@@ -86,9 +86,28 @@
 						<img src="{$ThemeDir}/images/faculty.jpg" alt="Professional Faculty">
 						<div class="">
 							<h5>Professional Faculty</h5>
-							<h4>Meet Our Instructors</h4>
+							<h4><a href="{$BaseHref}about/instructors/">Meet Our Instructors</a></h4>
 							<p>Our faculty includes distinguished instructors and choreographers as well as current and former dancers from major companies worldwide.</p>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="announcements">
+						<% with $Page(news) %>
+							<% if $AllChildren %>
+								<h3>Announcements</h3>
+								<ul>
+									<% loop $AllChildren.Reverse.Limit(3) %>
+										<li>
+											<span class="date">$PublishDate.format(F d)</span>
+											<a href="$Link">$Title</a>
+
+										</li>
+									<% end_loop %>
+								</ul>
+								<p class="viewall"><a href="{$BaseHref}/news-and-events/news/">View all accouncements</a></p>
+							<% end_if %>
+						<% end_with %>
 					</div>
 				</div>
 			</div>

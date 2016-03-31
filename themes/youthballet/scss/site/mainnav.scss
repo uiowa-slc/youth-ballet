@@ -23,7 +23,7 @@
 	font-size: 15px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	padding: 10px 15px;
+	padding: 10px 13px;
 }
 /* Top level hover state, preserve hover state when hovering dropdown  */
 .main-nav li > a:hover,
@@ -59,7 +59,7 @@
 	transition: opacity .2s linear;
 	min-width: 200px;
 	background: #fff;
-	border-top: 3px solid $link;
+	border-top: 4px solid $link;
 }
 /* Arrow */
 .main-nav ul:before {

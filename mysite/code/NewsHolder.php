@@ -1,34 +1,37 @@
 <?php
-class StaffMember extends Page {
+class NewsHolder extends Blog {
 
 	private static $db = array(
-		"StaffPosition" => "Text",
-		"StaffEmailAddress" => "Text",
-		"StaffPhoneNumber" => "Text"
+
 	);
 
 	private static $has_one = array(
-		"StaffPhoto" => "Image",
+
+	);
+	private static $belongs_many_many = array (
+	);
+	private static $has_many = array(
 	);
 
+	private static $allowed_children = array(
+		'NewsEntry'
+	);
+
+
+
+	private static $singular_name = 'News Holder';
+
+	private static $plural_name = 'News Holders';
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 
-		$fields->addFieldToTab("Root.Main", new TextField("StaffPosition", "Position"));
-		$fields->addFieldToTab("Root.Main", new TextField("StaffEmailAddress", "Email address"));
-		$fields->addFieldToTab("Root.Main", new TextField("StaffPhoneNumber", "Phone Number"));
-		$fields->addFieldToTab("Root.Main", new UploadField("StaffPhoto", "Staff Photo"));
-		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Biography"));
-
 		return $fields;
-
 	}
 
-	//private static $allowed_children = array("");
 
 }
-class StaffMember_Controller extends Page_Controller {
+class NewsHolder_Controller extends Blog_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -51,7 +54,11 @@ class StaffMember_Controller extends Page_Controller {
 	public function init() {
 		parent::init();
 
+	}
 
+	public function PaginatedNewsEntries($pageLength = 10){
+		$entries = $this->BlogEntries();
+		return $entries->setPageLength($pageLength);
 	}
 
 }

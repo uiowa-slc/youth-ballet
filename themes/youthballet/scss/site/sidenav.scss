@@ -82,6 +82,12 @@ Subnavigation
 		color: $link;
 	}
 }
+.subnavigation .second-level li.active {
+	border-bottom: none;
+}
+.subnavigation .second-level li.active a {
+	font-weight: bold;
+}
 .subnavigation .second-level li a {
 	font-size: 14px;
 	padding: 10px 20px 10px 30px;

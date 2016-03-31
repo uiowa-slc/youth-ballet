@@ -4,8 +4,8 @@
 			<a href="{$BaseHref}enrollment/" class="enroll-link">Enroll Now</a>
 		</div>
 		<div class="col2">
-			<h4>Join the next generation of great Iowan dancers.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque  sem  quam venenatis vestibulum.</p>
+			<h4>University of Iowa Youth Ballet and Community Dance School</h4>
+			<p>We are committed to providing excellent, technique appropriate, and challenging classes for all ability levels across dance disciplines.</p>
 		</div>
 		<div class="col3">
 			<div class="testimonials">
