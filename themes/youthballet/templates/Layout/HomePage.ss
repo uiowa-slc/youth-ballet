@@ -97,7 +97,7 @@
 							<% if $AllChildren %>
 								<h3>Announcements</h3>
 								<ul>
-									<% loop $AllChildren.Reverse.Limit(3) %>
+									<% loop $BlogPosts.Limit(3) %>
 										<li>
 											<span class="date">$PublishDate.format(F d)</span>
 											<a href="$Link">$Title</a>

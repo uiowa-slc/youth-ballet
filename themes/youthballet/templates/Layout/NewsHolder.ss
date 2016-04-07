@@ -29,7 +29,7 @@
 									<p class="entry-date">
 										Posted on <time datetime="$PublishDate.format(c)" itemprop="datePublished">$PublishDate.format(F d Y)</time>
 									</p>
-									<p class="entry-content">$Content.LimitCharacters(170)</p>
+									<p class="entry-content">$Content.LimitCharacters(250)</p>
 								</div>
 							</div>
 						<% end_loop %>

@@ -14,7 +14,6 @@ class StaffMember extends Page {
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
-
 		$fields->addFieldToTab("Root.Main", new TextField("StaffPosition", "Position"));
 		$fields->addFieldToTab("Root.Main", new TextField("StaffEmailAddress", "Email address"));
 		$fields->addFieldToTab("Root.Main", new TextField("StaffPhoneNumber", "Phone Number"));

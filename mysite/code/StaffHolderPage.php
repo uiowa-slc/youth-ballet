@@ -12,7 +12,6 @@ class StaffHolderPage extends InteriorPage {
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
-
 		return $fields;
 
 	}

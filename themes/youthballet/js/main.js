@@ -49,13 +49,13 @@ $(document).ready(function() {
 	});
 
 	/* Testimonials */
-	$('.testimonials').flickity({
-		wrapAround: true,
-		pageDots: false,
-		prevNextButtons: false,
-		autoPlay: true,
-		autoPlay: 8000
-	});
+	// $('.testimonials').flickity({
+	// 	wrapAround: true,
+	// 	pageDots: false,
+	// 	prevNextButtons: false,
+	// 	autoPlay: true,
+	// 	autoPlay: 8000
+	// });
 
 
 

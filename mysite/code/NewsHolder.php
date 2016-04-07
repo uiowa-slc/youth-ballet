@@ -25,7 +25,7 @@ class NewsHolder extends Blog {
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
-
+		$fields->removeByName("Testimonial");
 		return $fields;
 	}
 

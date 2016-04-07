@@ -21,6 +21,8 @@ class NewsEntry extends BlogPost {
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
+		$fields->removeByName("Testimonial");
+		$fields->removeByName("PhotoGallery");
 		$fields->removeByName("Widgets");
 		$fields->removeByName("BackgroundPhoto");
 

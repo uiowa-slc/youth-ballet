@@ -79,4 +79,19 @@
 	padding: 10px;
 	font-size: 15px;
 	text-align: center;
+	opacity: 0;
+	transition: opacity 0.5s,transform 0.5s ease-in-out;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.photo-gallery .gallery-cell.is-selected .photo-caption {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
 }
