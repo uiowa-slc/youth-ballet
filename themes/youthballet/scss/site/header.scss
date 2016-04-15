@@ -1,16 +1,26 @@
 .header {
-
-
 	position: absolute;
 	width: 100%;
-	top: 0;
+	top: 43px;
 	left: 0;
 	z-index: 50;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.header .logo {
-	float: left;
+.logo {
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 1;
+	margin-top: 1em;
+	width: 250px;
+	margin-left: -125px;
+	& img {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 

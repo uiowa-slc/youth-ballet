@@ -1,5 +1,8 @@
 <% if $BackgroundPhoto %>
 	<div class="page-photo">
+		<a href="{$BaseHref}" class="logo">
+	<img src="{$ThemeDir}/images/youth-ballet-logo.png" alt="Youth Ballet">
+</a>
 		<picture>
 			<!--[if IE 9]><video style="display: none;"><![endif]-->
 			<source srcset="$BackgroundPhoto.CroppedFocusedImage(1200,600).URL" media="(min-width: 980px)">

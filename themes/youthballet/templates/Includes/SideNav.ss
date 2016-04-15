@@ -2,7 +2,7 @@
 
 	<div class="subnavigation">
 
-		<h4 id="handle2">Navigation</h4>
+		<%-- <h4 id="handle2">Navigation</h4> --%>
 		<%-- <% if Menu(2) %>
 			<% with Level(1) %>
 				<h3 class="section-title">

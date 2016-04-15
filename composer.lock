@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "747c0663159a42c070ed07b937129e8a",
-    "content-hash": "8dd587cab08b363094f65b1392ebc3b0",
+    "hash": "46db24ec452c7fce6c70b09e0a29730c",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -13,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "825b989ad60cd8e16cc6fd7363409cc475492760"
+                "reference": "29482dbd17e42c3de364aa3d46d20ba65175c9d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/825b989ad60cd8e16cc6fd7363409cc475492760",
-                "reference": "825b989ad60cd8e16cc6fd7363409cc475492760",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/29482dbd17e42c3de364aa3d46d20ba65175c9d3",
+                "reference": "29482dbd17e42c3de364aa3d46d20ba65175c9d3",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +46,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2016-02-19 11:52:17"
+            "time": "2016-04-11 19:31:21"
         },
         {
             "name": "composer/installers",
@@ -55,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "a24be9c9a4f3d87e272b7bc33a93a84e63393004"
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/a24be9c9a4f3d87e272b7bc33a93a84e63393004",
-                "reference": "a24be9c9a4f3d87e272b7bc33a93a84e63393004",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
                 "shasum": ""
             },
             "require": {
@@ -82,8 +81,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -103,6 +102,7 @@
                 "Craft",
                 "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
                 "Mautic",
                 "OXID",
@@ -146,7 +146,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-03-31 17:23:21"
+            "time": "2016-04-13 19:46:30"
         },
         {
             "name": "johngrogg/ics-parser",
@@ -266,6 +266,38 @@
                 "silverstripe"
             ],
             "time": "2016-02-10 17:31:37"
+        },
+        {
+            "name": "md/division-bar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
+                "reference": "3a92657eea12f12de10caeaced93c0abb217e2e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/3a92657eea12f12de10caeaced93c0abb217e2e0",
+                "reference": "3a92657eea12f12de10caeaced93c0abb217e2e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe/cms": "3.*",
+                "silverstripe/framework": "3.*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "description": "The University of Iowa Division of Student Life Bar",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
+            },
+            "time": "2016-03-22 20:18:49"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
@@ -531,12 +563,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-googlesitemaps.git",
-                "reference": "356350ede586818544d6a5f51aa0dddf5c70b18c"
+                "reference": "6fd2901aafc42645aa50e988a83d7aa8663c11b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-googlesitemaps/zipball/356350ede586818544d6a5f51aa0dddf5c70b18c",
-                "reference": "356350ede586818544d6a5f51aa0dddf5c70b18c",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-googlesitemaps/zipball/6fd2901aafc42645aa50e988a83d7aa8663c11b0",
+                "reference": "6fd2901aafc42645aa50e988a83d7aa8663c11b0",
                 "shasum": ""
             },
             "require": {
@@ -560,7 +592,7 @@
                 "seo",
                 "silverstripe"
             ],
-            "time": "2016-03-04 03:40:30"
+            "time": "2016-04-12 20:00:40"
         },
         {
             "name": "silverstripe/lumberjack",
@@ -775,12 +807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "8fa377ed650a9976a90abd9f94e3335027de5b32"
+                "reference": "4e8e919c4260690dc9c779e03a6f9b913ac78b7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/8fa377ed650a9976a90abd9f94e3335027de5b32",
-                "reference": "8fa377ed650a9976a90abd9f94e3335027de5b32",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/4e8e919c4260690dc9c779e03a6f9b913ac78b7d",
+                "reference": "4e8e919c4260690dc9c779e03a6f9b913ac78b7d",
                 "shasum": ""
             },
             "require": {
@@ -830,7 +862,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2016-03-30 00:59:11"
+            "time": "2016-04-08 15:45:10"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
@@ -838,12 +870,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "62a744d48f933c522ca5914bbae548f05a0870e7"
+                "reference": "fc2e8e5538198ce94fff0efd1a5564d0ce726dd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/62a744d48f933c522ca5914bbae548f05a0870e7",
-                "reference": "62a744d48f933c522ca5914bbae548f05a0870e7",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/fc2e8e5538198ce94fff0efd1a5564d0ce726dd3",
+                "reference": "fc2e8e5538198ce94fff0efd1a5564d0ce726dd3",
                 "shasum": ""
             },
             "require": {
@@ -870,7 +902,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2016-03-23 23:00:22"
+            "time": "2016-04-04 15:32:51"
         }
     ],
     "packages-dev": [],

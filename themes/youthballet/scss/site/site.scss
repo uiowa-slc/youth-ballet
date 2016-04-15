@@ -1,6 +1,9 @@
 /* ---------------------------------------------------------------
 Base styles
 --------------------------------------------------------------- */
+#BetterNavigator {
+	display: none;
+}
 body, html {
   height: 100%;
 }
@@ -13,7 +16,7 @@ html {
 	}
 }
 body {
-	background: #fafafa;
+	background: #fff;
 	color: #222;
 	font-family: $body-font;
 	margin: 0;
@@ -38,6 +41,30 @@ body {
 	}
 }
 
+/* Division Top Bar
+--------------------------------------------------------------- */
+.division-topbar {
+	background: #000;
+}
+.uiowa, .directory-toggle {
+    line-height: 50px;
+}
+
+.search-toggle {
+	@media (max-width: 600px) {
+		height: 50px;
+		width: 50px;
+		margin-right: 35px;
+		border-right: 1px solid #222;
+	}
+
+}
+.division-search-input, input.division-search-input[type="search"] {
+	@media (max-width: 600px) {
+		width: 100%;
+	}
+}
+
 /* ---------------------------------------------------------------
 Layout
 --------------------------------------------------------------- */
@@ -45,17 +72,18 @@ Layout
 	max-width: $break-xlarge;
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
 	position: relative;
 	// @media (min-width: $break-small) {
 	// 	width: $break-small - 20;
 	// 	padding-left: 25px;
 	// 	padding-right: 25px;
 	// }
-	// @media (min-width: $break-medium) {
-	// 	width: $break-medium - 20;
-	// }
+	@media (min-width: $break-medium) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 	// @media (min-width: $break-large) {
 	// 	width: $break-large - 20;
 	// }
@@ -64,9 +92,13 @@ Layout
 	// }
 }
 .main {
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	min-height: 600px;
+	@media (min-width: $break-small) {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
 }
 .page-photo {
 	max-height: 600px;
@@ -81,9 +113,9 @@ Layout
 	bottom: 0;
 	right: 0;
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.70) 10%, rgba(0,0,0,0) 40%);
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 40%);
-background: linear-gradient(to bottom,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 40%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 );
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 40%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 40%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 );
 }
 .page-photo img {
 	display: block;

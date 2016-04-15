@@ -3,27 +3,12 @@
 	padding: 4em 0;
 	color: #fff;
 }
-.enroll .col1,
-.enroll .col2,
-.enroll .col3 {
-	float: left;
-	padding: 0 2em;
-}
-.enroll .col1 {
-	width: 20%;
-	padding-left: 0;
-}
-.enroll .col2,
-.enroll .col3 {
-	width: 40%;
-}
-.enroll .col3 {
-	padding-right: 0;
-}
+
 .enroll-link {
 	background-color: #000;
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
+	margin-bottom: 2em;
 	color: #fff;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -37,13 +22,11 @@
 		background-color: #222;
 	}
 }
-.col2 {
-	& h4 {
+.enroll-heading {
 		color: #fff;
 		font-size: 26px;
 		margin-top: 0;
-	}
-	& p {
+	& + p {
 		font-size: 16px;
 	}
 }

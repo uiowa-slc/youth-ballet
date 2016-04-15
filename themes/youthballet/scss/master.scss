@@ -17,14 +17,15 @@
 @import "elements/nav-bootstrap";
 @import "elements/tables";
 
+
+/* Division Bar
+-------------------------------------------*/
+@import "../../../division-bar/scss/_uiowa-bar-bootstrap.scss";
+
 /* Plugins
 -------------------------------------------*/
-@import "plugins/shifter";
-@import "plugins/navigation";
-@import "plugins/lightbox";
 @import "plugins/flickity";
 
-// @import "_uiowa-bar-bootstrap";
 
 /* Layout
 -------------------------------------------*/
@@ -41,6 +42,7 @@
 @import "site/footer";
 @import "site/sidenav";
 @import "site/mainnav";
+@import "site/mobilenav";
 @import "site/breadcrumbs";
 @import "site/pagination";
 

@@ -1,4 +1,4 @@
-<div class="main-photo">
+<div class="main-photo" style="background-image: url($BackgroundPhoto.CroppedFocusedImage(1600,700).URL);">
 	<div class="inner">
 		<h3>Take the leap</h3>
 		<a href="{$BaseHref}enrollment" class="main-photo-link">Enroll Online Today</a>
@@ -18,7 +18,9 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="program">
-					<img src="{$ThemeDir}/images/program-children.jpg" alt="Children">
+					<div class="border-img">
+						<img src="{$ThemeDir}/images/program-children.jpg" alt="Children">
+					</div>
 					<div class="content">
 						<h3>Children</h3>
 						<p>Introduces students to basic movement exploration.<br />For students ages 2-6.</p>
@@ -28,7 +30,9 @@
 			</div>
 			<div class="col-md-4">
 				<div class="program">
-					<img src="{$ThemeDir}/images/program-ballet.jpg" alt="Youth Ballet">
+					<div class="border-img">
+						<img src="{$ThemeDir}/images/program-ballet.jpg" alt="Youth Ballet">
+					</div>
 					<div class="content">
 						<h3>Youth Ballet</h3>
 						<p>Our youth ballet curriculum consists of five levels of ballet technique, prepointe classes, and pointe classes.</p>
@@ -38,7 +42,9 @@
 			</div>
 			<div class="col-md-4">
 				<div class="program">
-					<img src="{$ThemeDir}/images/program-adult.jpg" alt="Teen and Adult">
+					<div class="border-img">
+						<img src="{$ThemeDir}/images/program-adult.jpg" alt="Teen and Adult">
+					</div>
 					<div class="content">
 						<h3>Teen & Adult</h3>
 						<p>Classes include Adult Beginner and Adult Intermediate levels in ballet, modern, jazz, and body ocnditioning.</p>
@@ -73,7 +79,9 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="learn-spot">
-						<img src="{$ThemeDir}/images/tour.jpg" alt="Tour the studio">
+						<div class="border-img">
+							<img src="{$ThemeDir}/images/tour.jpg" alt="Tour the studio">
+						</div>
 						<div class="">
 							<h5>Tour the Studio</h5>
 							<h4><a href="{$BaseHref}about/our-facilities/">Our Facilities</a></h4>
@@ -83,7 +91,9 @@
 				</div>
 				<div class="col-md-4">
 					<div class="learn-spot">
-						<img src="{$ThemeDir}/images/faculty.jpg" alt="Professional Faculty">
+						<div class="border-img">
+							<img src="{$ThemeDir}/images/faculty.jpg" alt="Professional Faculty">
+						</div>
 						<div class="">
 							<h5>Professional Faculty</h5>
 							<h4><a href="{$BaseHref}about/instructors/">Meet Our Instructors</a></h4>
