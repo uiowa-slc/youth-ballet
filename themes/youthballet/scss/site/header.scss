@@ -7,20 +7,29 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.logo {
-	display: inline-block;
-	text-align: center;
+
+.headertest {
 	position: absolute;
-	top: 0;
-	left: 50%;
-	z-index: 1;
-	margin-top: 1em;
+	z-index: 10;
+	width: 100%;
+}
+.logo {
+	display: block;
+	margin: 1em auto;
 	width: 250px;
-	margin-left: -125px;
-	& img {
-		display: block;
-		margin: 0 auto;
+	@media (min-width: $break-medium) {
+		width: 283px;
 	}
+	@media (min-width: $break-large) {
+		float: left;
+		width: 250px;
+	}
+	@media (min-width: 1050px) {
+		width: 283px;
+	}
+}
+.page-photo .logo img {
+	width: auto;
 }
 
 

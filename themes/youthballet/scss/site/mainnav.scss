@@ -1,29 +1,41 @@
 
 .nav-wrapper {
-	float: right;
-	margin-top: 20px;
 	@media (max-width: $break-medium - 1) {
   		display: none;
+	}
+	@media (min-width: $break-large) {
+		float: right;
+		margin-top: 2em;
 	}
 }
 .main-nav, .main-nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	text-align: center;
 }
-.main-nav li {
-	float: left;
+.main-nav > li {
+	display: inline-block;
 	position: relative;
 }
 
 /* Top level nav items */
-.main-nav li a {
+.main-nav > li > a {
 	color: #fff;
 	display: block;
-	font-size: 15px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	padding: 10px 13px;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 15px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	@media (min-width: $break-large) {
+		padding: 10px 9px;
+	}
+	@media (min-width: 1050px) {
+		padding: 10px 12px;
+	}
+	@media (min-width: $break-xlarge) {
+		padding: 10px 15px;
+	}
 }
 /* Top level hover state, preserve hover state when hovering dropdown  */
 .main-nav li > a:hover,
@@ -53,7 +65,7 @@
 	position: absolute;
 	top: auto;
 	left: -9999px;
-	margin-left: -90px;
+	margin-left: -100px;
 	opacity: 0;
 	-webkit-transition: opacity 0.2s linear;
 	transition: opacity .2s linear;

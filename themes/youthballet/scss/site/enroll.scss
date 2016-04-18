@@ -2,6 +2,9 @@
 	background-color: $link;
 	padding: 4em 0;
 	color: #fff;
+	@media (min-width: $break-small) {
+		padding: 3em 0;
+	}
 }
 
 .enroll-link {
@@ -23,18 +26,30 @@
 	}
 }
 .enroll-heading {
-		color: #fff;
-		font-size: 26px;
-		margin-top: 0;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 0;
 	& + p {
 		font-size: 16px;
 	}
+	@media (min-width: $break-small) {
+		font-size: 26px;
+	}
+}
+.testimonials {
+	@media (max-width: $break-medium - 1) {
+		margin-top: 2em;
+	}
 }
 .testimonials .quote {
-	font-size: 23px;
+	font-size: 20px;
 	margin-top: 0;
-	line-height: 1.7;
+	line-height: 1.5;
 	font-family: $heading-font;
+	@media (min-width: $break-small) {
+		line-height: 1.7;
+		font-size: 23px;
+	}
 }
 .testimonials .cite {
 	color: #000;
@@ -51,10 +66,6 @@
 		margin-top: 5px;
 		letter-spacing: 0;
 	}
-}
-.testimonials .gallery-cell {
-	width: 100%;
-	padding: 0 5px;
 }
 
 

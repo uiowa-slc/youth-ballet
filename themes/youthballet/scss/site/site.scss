@@ -46,10 +46,12 @@ body {
 .division-topbar {
 	background: #000;
 }
-.uiowa, .directory-toggle {
-    line-height: 50px;
+.uiowa {
+	line-height: 40px;
+	@media (max-width: 601px) {
+		line-height: 50px;
+	}
 }
-
 .search-toggle {
 	@media (max-width: 600px) {
 		height: 50px;
@@ -59,9 +61,23 @@ body {
 	}
 
 }
+
+.search-toggle {
+	@media only screen and (max-width: 600px) {
+		background-position: 12px 14px;
+	}
+}
 .division-search-input, input.division-search-input[type="search"] {
 	@media (max-width: 600px) {
 		width: 100%;
+	}
+}
+.division-search {
+	@media (min-width: 601px) {
+		right: 110px;
+	}
+	@media (min-width: 768px) {
+		right: 1em;
 	}
 }
 
@@ -101,9 +117,11 @@ Layout
 	}
 }
 .page-photo {
+	background-color: #000;
 	max-height: 600px;
 	overflow: hidden;
 	position: relative;
+	min-height: 200px;
 }
 .page-photo:after {
 	content:'';

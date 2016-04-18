@@ -41,54 +41,18 @@ html, body {
 	right: 0;
 	height: 50px;
 	width: 50px;
-	z-index: 3;
+	z-index: 13;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-@media only screen and (min-width: 768px) {
-	.cd-header {
-		height: 80px;
-		background: transparent;
-		box-shadow: none;
+	@media (min-width: 601px) {
+		height: 40px;
+	}
+	@media (min-width: $break-medium) {
+		display: none;
 	}
 }
-@media only screen and (min-width: 1170px) {
-	.cd-header {
-		-webkit-transition: background-color 0.3s;
-		-moz-transition: background-color 0.3s;
-		transition: background-color 0.3s;
-		/* Force Hardware Acceleration in WebKit */
-		-webkit-transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
-		-ms-transform: translate3d(0, 0, 0);
-		-o-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-	}
-	.cd-header.is-fixed {
-		/* when the user scrolls down, we hide the header right above the viewport */
-		position: fixed;
-		top: -80px;
-		background-color: rgba(2, 23, 37, 0.96);
-		-webkit-transition: -webkit-transform 0.3s;
-		-moz-transition: -moz-transform 0.3s;
-		transition: transform 0.3s;
-	}
-	.cd-header.is-visible {
-		/* if the user changes the scrolling direction, we show the header */
-		-webkit-transform: translate3d(0, 100%, 0);
-		-moz-transform: translate3d(0, 100%, 0);
-		-ms-transform: translate3d(0, 100%, 0);
-		-o-transform: translate3d(0, 100%, 0);
-		transform: translate3d(0, 100%, 0);
-	}
-	.cd-header.menu-is-open {
-		/* add a background color to the header when the navigation is open */
-		background-color: rgba(2, 23, 37, 0.96);
-	}
-}
+
 
 .cd-logo {
 	display: block;
@@ -150,7 +114,7 @@ html, body {
 .cd-primary-nav-trigger .cd-menu-text {
 	color: #ddd;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-size: 16px;
 	/* hide the text on small devices */
 	display: none;
 }
@@ -214,14 +178,14 @@ html, body {
 	-o-transform: rotate(225deg);
 	transform: rotate(225deg);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) {
 	.cd-primary-nav-trigger {
-		width: 100px;
+		width: 105px;
 		padding-left: 1em;
 		background-color: transparent;
 		height: 30px;
 		line-height: 30px;
-		right: 2.2em;
+		right: 0;
 		top: 50%;
 		bottom: auto;
 		-webkit-transform: translateY(-50%);
@@ -253,7 +217,7 @@ html, body {
 	width: 100%;
 	margin: 0;
 	background: rgba(2, 23, 37, 0.96);
-	z-index: 2;
+	z-index: 12;
 	text-align: center;
 	padding: 50px 0;
 	-webkit-backface-visibility: hidden;

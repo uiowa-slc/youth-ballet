@@ -3,6 +3,9 @@
 	color: #fff;
 	position: relative;
 	padding: 1em 0;
+	@media (max-width: $break-small - 1 ) {
+		text-align: center;
+	}
 }
 .footer-logo img {
 	display: block;
@@ -19,6 +22,9 @@
 		color: #bbb;
 		display: block;
 		font-size: 14px;
+		@media (max-width: $break-small - 1 ) {
+			padding: 8px 0;
+		}
 		&:hover, &:focus {
 			text-decoration: underline;
 		}
