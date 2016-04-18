@@ -1,4 +1,5 @@
 <div class="main-photo" style="background-image: url($BackgroundPhoto.CroppedFocusedImage(1600,700).URL);">
+	<% include MainNav %>
 	<div class="inner">
 		<h3>Take the leap</h3>
 		<a href="{$BaseHref}enrollment" class="main-photo-link">Enroll Online Today</a>

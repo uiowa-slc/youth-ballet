@@ -12,9 +12,7 @@
 	</div>
 <% else %>
 	<div class="page-photo">
-		<a href="{$BaseHref}" class="logo">
-			<img src="{$ThemeDir}/images/youth-ballet-logo.png" alt="Youth Ballet">
-		</a>
+		<% include MainNav %>
 		<picture>
 			<!--[if IE 9]><video style="display: none;"><![endif]-->
 			<source srcset="$SiteConfig.DefaultPhoto.CroppedFocusedImage(1200,400).URL" media="(min-width: 980px)">
