@@ -15,7 +15,7 @@ class Page extends SiteTree {
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 
-		$fields->removeByName("Metadata");
+		$fields->removeByName("ExtraMeta");
 		$fields->addFieldToTab("Root.Main", new UploadField("BackgroundPhoto", "Background Photo"), "Content");
 
 		$fields->addFieldToTab("Root.Testimonial", new TextareaField("TestimonialQuote", "Quote"));

@@ -6,6 +6,9 @@
 	@media (max-width: $break-small - 1 ) {
 		text-align: center;
 	}
+	& a {
+		color: #bbb;
+	}
 }
 .footer-logo img {
 	display: block;
@@ -33,7 +36,7 @@
 .footer-address, .copy {
 	color: #bbb;
 	font-size: 14px;
-	margin: 0 0 10px 0;
+	margin: 0;
 }
 .footer .row > div {
 	padding: 1em;

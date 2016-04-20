@@ -1,6 +1,7 @@
 <% if $BackgroundPhoto %>
 	<div class="page-photo">
 		<% include MainNav %>
+
 		<picture>
 			<!--[if IE 9]><video style="display: none;"><![endif]-->
 			<source srcset="$BackgroundPhoto.CroppedFocusedImage(1200,600).URL" media="(min-width: 980px)">

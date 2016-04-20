@@ -1,23 +1,8 @@
-<!-- Header -->
-<%-- <header class="header" role="banner">
-	<div class="container clearfix">
-		<a href="{$BaseHref}" class="logo">
-			<img src="{$ThemeDir}/images/youth-ballet-logo.png" alt="Youth Ballet">
-		</a>
-		<% include MainNav %>
-	</div>
-</header> --%>
+
 <header class="cd-header" role="banner">
 	<a class="cd-primary-nav-trigger" href="#0">
 		<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
 	</a>
-
-	<%-- <nav>
-		<ul class="cd-secondary-nav">
-			<li><a href="#0">Log In</a></li>
-			<li><a href="#0">Register</a></li>
-		</ul>
-	</nav> --%>
 </header>
 
 <nav>

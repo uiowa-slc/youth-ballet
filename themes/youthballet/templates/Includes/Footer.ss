@@ -16,16 +16,21 @@
 			</div>
 			<div class="col-sm-6 col-md-3">
 				<p class="footer-address">
-					E114 Halsey Hall<br>
+					$SiteConfig.Title<br>
+					<% if $SiteConfig.Address1 %>$SiteConfig.Address1 <br><% end_if %>
 					Iowa City, IA 52242<br>
-					(319) 335-2228
+					<% if $SiteConfig.Phone %>$SiteConfig.Phone <br><% end_if %>
+					<% if $SiteConfig.Email %><a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a><% end_if %>
 				</p>
-				<p class="copy">&copy; 2016 The University of Iowa<br>
-				All rights reserved.</p>
 			</div>
 			<div class="clearfix visible-md-block"></div>
 			<div class="col-sm-12 col-md-3">
 				<img src="{$ThemeDir}/images/clas_black_arch_solid.png" alt="College of Liberal Arts and Sciences logo" style="display: block;margin: 0 auto;">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="copy text-center">&copy; {$Now.Year} The University of Iowa. All rights reserved. Created by <a href="https://md.studentlife.uiowa.edu/" target="_blank">M+D</a></p>
 			</div>
 		</div>
 	</div>

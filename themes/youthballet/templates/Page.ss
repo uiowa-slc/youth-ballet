@@ -6,16 +6,16 @@
 	<% base_tag %>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="$Content.LimitCharacters(150)">
+	<meta name="description" content="<% if $MetaDescription %>$MetaDescription<% else %>$Content.LimitCharacters(150)<% end_if %>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>$Title | $SiteConfig.Title</title>
+	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title | $SiteConfig.Title<% end_if %></title>
 	<script src="{$ThemeDir}/js/modernizr.js"></script>
-	<!-- Typekit -->
-	<% include TypeKit %>
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="{$BaseHref}favicon.ico" type="image/x-icon">
 	<!-- CSS -->
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
+	<!-- Typekit -->
+	<% include TypeKit %>
 	<!-- Picturefill -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script>
 	<!--[if IE 8]>
