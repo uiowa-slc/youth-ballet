@@ -15,11 +15,11 @@
 				</ul>
 			</div>
 			<div class="col-sm-6 col-md-3">
-				<p class="footer-address">
-					$SiteConfig.Title<br>
-					<% if $SiteConfig.Address1 %>$SiteConfig.Address1 <br><% end_if %>
-					Iowa City, IA 52242<br>
-					<% if $SiteConfig.Phone %>$SiteConfig.Phone <br><% end_if %>
+				<p class="footer-address" itemscope itemtype="http://schema.org/LocalBusiness">
+					<span itemprop="name">$SiteConfig.Title</span><br>
+					<span itemprop="streetAddress"><% if $SiteConfig.Address1 %>$SiteConfig.Address1</span> <br><% end_if %>
+					<span itemprop="addressLocality">Iowa City</span>, <span itemprop="addressRegion">IA</span> <span itemprop="postalCode">52242</span><br>
+					<% if $SiteConfig.Phone %><span itemprop="telephone">$SiteConfig.Phone</span> <br><% end_if %>
 					<% if $SiteConfig.Email %><a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a><% end_if %>
 				</p>
 			</div>

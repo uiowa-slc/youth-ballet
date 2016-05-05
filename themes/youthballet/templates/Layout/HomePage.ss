@@ -1,8 +1,8 @@
 <div class="main-photo" style="background-image: url($BackgroundPhoto.CroppedFocusedImage(1600,700).URL);">
 	<% include MainNav %>
 	<div class="inner">
-		<h3>Take the leap</h3>
-		<a href="{$BaseHref}enrollment" class="main-photo-link">Enroll Online Today</a>
+		<h3>$HomePhotoTitle</h3>
+		<a href="$HomePhotoLink.Link" class="main-photo-link">$HomePhotoButtonText</a>
 	</div>
 </div>
 
@@ -10,7 +10,7 @@
 	<div class="container">
 		<h2>Dance Programs <span>for all ages</span></h2>
 		<br>
-		<p>Located on The University of Iowa campus, The School of Dance is the perfect choice, whether you dream of a career in dance, seek an outlet for personal growth or just want to have fun.</p>
+		<p>$ProgramsPageContent</p>
 	</div>
 </div>
 
@@ -19,32 +19,32 @@
 		<div class="row">
 			<div class="program clearfix">
 				<div class="border-img">
-					<img src="{$ThemeDir}/images/program-children.jpg" alt="Children">
+					<img src="$Program1Photo.CroppedImage(350,350).URL" alt="$Program1Title">
 				</div>
 				<div class="content">
-					<h3>Children</h3>
-					<p>Introduces students to basic movement exploration.<br />For students ages 2-6.</p>
-					<a href="{$BaseHref}programs/childrens-division/">Explore</a>
+					<h3>$Program1Title</h3>
+					<p>$Program1Content</p>
+					<a href="$Program1Link.Link">Explore</a>
 				</div>
 			</div>
 			<div class="program clearfix">
 				<div class="border-img">
-					<img src="{$ThemeDir}/images/program-ballet.jpg" alt="Youth Ballet">
+					<img src="$Program2Photo.CroppedImage(350,350).URL" alt="$Program2Title">
 				</div>
 				<div class="content">
-					<h3>Youth Ballet</h3>
-					<p>Our youth ballet curriculum consists of five levels of ballet technique, prepointe classes, and pointe classes.</p>
-					<a href="{$BaseHref}programs/youth-ballet-program/">Explore</a>
+					<h3>$Program2Title</h3>
+					<p>$Program2Content</p>
+					<a href="$Program2Link.Link">Explore</a>
 				</div>
 			</div>
 			<div class="program clearfix">
 				<div class="border-img">
-					<img src="{$ThemeDir}/images/program-adult.jpg" alt="Teen and Adult">
+					<img src="$Program3Photo.CroppedImage(350,350).URL" alt="$Program3Title">
 				</div>
 				<div class="content">
-					<h3>Teen & Adult</h3>
-					<p>Classes include Adult Beginner and Adult Intermediate levels in ballet, modern, jazz, and body ocnditioning.</p>
-					<a href="{$BaseHref}programs/teen-and-adult-classes/">Explore</a>
+					<h3>$Program3Title</h3>
+					<p>$Program3Content</p>
+					<a href="$Program3Link.Link">Explore</a>
 				</div>
 			</div>
 		</div>
@@ -54,8 +54,8 @@
 <div class="established">
 	<div class="head">
 		<div class="content">
-			<h2>Established in 1972</h2>
-			<p>We strive to serve the people of Iowa by providing high-quality outreach that enriches lives by encouraging and nurturing artistic expression and fostering the love and teaching of movement.</p>
+			<h2>$PromoHeading</h2>
+			<p>$PromoContent</p>
 		</div>
 	</div>
 	<div class="established-photo">
@@ -75,24 +75,24 @@
 				<div class="col-md-4">
 					<div class="learn-spot clearfix">
 						<div class="border-img">
-							<img src="{$ThemeDir}/images/tour.jpg" alt="Tour the studio">
+							<img src="$AboutUsFeature1Photo.CroppedImage(350,350).URL" alt="$AboutUsFeature1Title">
 						</div>
 						<div class="content">
-							<h5>Tour the Studio</h5>
-							<h4><a href="{$BaseHref}about/our-facilities/">Our Facilities</a></h4>
-							<p>With its marley floors, high ceilings, and abundant natural light, Halsey Hall provides an inspiring and professional dance space.</p>
+							<h5>$AboutUsFeature1SubTitle</h5>
+							<h4><a href="$AssociatedPage.Link">$AboutUsFeature1Title</a></h4>
+							<p>$AboutUsFeature1Content</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="learn-spot clearfix">
 						<div class="border-img">
-							<img src="{$ThemeDir}/images/faculty.jpg" alt="Professional Faculty">
+							<img src="$AboutUsFeature2Photo.CroppedImage(350,350).URL" alt="$AboutUsFeature2Title">
 						</div>
 						<div class="content">
-							<h5>Professional Faculty</h5>
-							<h4><a href="{$BaseHref}about/instructors/">Meet Our Instructors</a></h4>
-							<p>Our faculty includes distinguished instructors and choreographers as well as current and former dancers from major companies worldwide.</p>
+							<h5>$AboutUsFeature2SubTitle</h5>
+							<h4><a href="$AssociatedPageTwo.Link">$AboutUsFeature2Title</a></h4>
+							<p>$AboutUsFeature2Content</p>
 						</div>
 					</div>
 				</div>
