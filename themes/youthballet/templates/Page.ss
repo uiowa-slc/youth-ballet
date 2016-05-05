@@ -18,16 +18,6 @@
 	<% include TypeKit %>
 	<!-- Picturefill -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script>
-	<!--[if IE 8]>
-		<meta http-equiv="x-ua-compatible" content="IE=8">
-	  	<script>var IE8 = true;</script>
-	  	<script src="{$ThemeDir}/js/ie/site.ie8.js"></script>
-		<link rel="stylesheet" href="{$ThemeDir}/css/site.ie8.css">
-	<![endif]-->
-	<!--[if IE 9]>
-		<script>var IE9 = true;</script>
-		<script src="{$ThemeDir}/js/ie/site.ie9.js"></script>
-	<![endif]-->
 	<!--[if lt IE 9]>
 		 <script src="{$ThemeDir}/js/ie/html5shiv.js"></script>
 		 <script src="{$ThemeDir}/js/ie/respond.min.js"></script>
@@ -52,57 +42,7 @@
 
 	<!-- JS -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
-	<script>
-		jQuery(document).ready(function($){
-			//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
-			var MQL = 1170;
-
-			//primary navigation slide-in effect
-			if($(window).width() > MQL) {
-				var headerHeight = $('.cd-header').height();
-				$(window).on('scroll',
-				{
-			        previousTop: 0
-			    },
-			    function () {
-				    var currentTop = $(window).scrollTop();
-				    //check if user is scrolling up
-				    if (currentTop < this.previousTop ) {
-				    	//if scrolling up...
-				    	if (currentTop > 0 && $('.cd-header').hasClass('is-fixed')) {
-				    		$('.cd-header').addClass('is-visible');
-				    	} else {
-				    		$('.cd-header').removeClass('is-visible is-fixed');
-				    	}
-				    } else {
-				    	//if scrolling down...
-				    	$('.cd-header').removeClass('is-visible');
-				    	if( currentTop > headerHeight && !$('.cd-header').hasClass('is-fixed')) $('.cd-header').addClass('is-fixed');
-				    }
-				    this.previousTop = currentTop;
-				});
-			}
-
-			//open/close primary navigation
-			$('.cd-primary-nav-trigger').on('click', function(){
-				$('.cd-menu-icon').toggleClass('is-clicked');
-				$('.cd-header').toggleClass('menu-is-open');
-
-				//in firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
-				if( $('.cd-primary-nav').hasClass('is-visible') ) {
-					$('.cd-primary-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-						$('body').removeClass('overflow-hidden');
-					});
-				} else {
-					$('.cd-primary-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
-						$('body').addClass('overflow-hidden');
-					});
-				}
-			});
-		});
-	</script>
 	<% include GoogleAnalytics %>
 	$BetterNavigator
 </body>

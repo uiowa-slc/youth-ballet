@@ -1,10 +1,15 @@
 .main-photo {
-	// background: #000 url(../images/photo.jpg) no-repeat center top;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-	height: 670px;
+	height: 400px;
 	position: relative;
+	@media (min-width: $break-medium) {
+		height: 500px;
+	}
+	@media (min-width: $break-large) {
+		height: 670px;
+	}
 }
 .main-photo:after {
 	content:'';
@@ -14,14 +19,13 @@
 	right: 0;
 	bottom: 0;
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.70) 10%, rgba(0,0,0,0) 30%);
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 30%);
-background: linear-gradient(to bottom,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 30%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 );
-
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 30%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.70) 0%,rgba(0,0,0,0.70) 10%,rgba(0,0,0,0) 30%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 );
 }
 .main-photo .inner {
 	position: absolute;
-	z-index: 50;
+	z-index: 5;
 	bottom: 60px;
 	width: 450px;
 	left: 50%;
@@ -29,13 +33,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', e
 	text-align: center;
 	& h3 {
 		margin: 0;
-		font-size: 54px;
+		font-size: 36px;
 		text-align: center;
 		color: #fff;
 		text-transform: uppercase;
 		text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 		font-family: $body-font;
 		font-weight: 900;
+		@media (min-width: $break-small) {
+			font-size: 54px;
+		}
 	}
 }
 .main-photo .inner .main-photo-link {
@@ -49,6 +56,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', e
 	font-size: 15px;
 	font-weight: bold;
 	background: rgba(0,0,0,.3);
+	transition: background .2s ease-in-out;
+	&:hover, &:focus {
+		background: rgba(0,0,0,.7);
+	}
 }
 
 /* ---------------------------------------------------------------
@@ -59,11 +70,18 @@ Dance Programs
 	color: #fff;
 	text-align: center;
 	padding-top: 60px;
-	padding-bottom: 230px;
+	padding-bottom: 60px;
 	& p {
-		width: 80%;
-		font-size: 19px;
+		width: 95%;
+		font-size: 16px;
 		margin: 0 auto;
+		@media (min-width: $break-small) {
+			font-size: 19px;
+			width: 80%;
+		}
+	}
+	@media (min-width: $break-medium) {
+		padding-bottom: 230px;
 	}
 }
 .home-programs h2 {
@@ -77,54 +95,88 @@ Dance Programs
 	& span {
 		display: block;
 		font-weight: 900;
-		font-size: 66px;
+		font-size: 36px;
+		@media (min-width: $break-small) {
+			font-size: 46px;
+		}
+		@media (min-width: $break-medium) {
+			font-size: 66px;
+		}
 	}
 
 }
 .programs {
-	padding-bottom: 90px;
+	background: #fff;
+	@media (min-width: $break-medium) {
+		padding-bottom: 90px;
+	}
 }
 .program {
 	text-align: center;
+	padding: 1em;
 	@media (min-width: $break-medium) {
-		margin-top: -50%;
+		float: left;
+		width: 33.33333333333333%;
+		margin-top: -15%;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
-
+}
+.program {
 	& img {
 		width: 100%;
 		display: block;
 		position: relative;
 	}
-	& .content {
-		padding: 30px 20px 20px;
-		text-align: center;
-	}
 	& h3 {
 		font-family: $body-font;
-		font-size: 38px;
+		font-size: 23px;
 		color: #111;
 		margin-top: 0;
 		margin-bottom: 0;
 		text-transform: uppercase;
 		font-weight: 900;
+		@media (min-width: $break-large) {
+			font-size: 32px;
+		}
 	}
 	& p {
 		font-size: 16px;
 		margin-top: 5px;
 	}
-	& a {
-		color: #000;
-		border: 1px solid #d7d7d7;
-		display: inline-block;
-		padding: 5px 30px;
-		font-size: 14px;
-		font-weight: bold;
-		border-radius: 15px;
-		margin-top: 1em;
+}
+.program .content a {
+	color: #000;
+	border: 1px solid #d7d7d7;
+	display: inline-block;
+	padding: 5px 30px;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 15px;
+	background: #fff;
+	transition: all .1s ease-in-out;
+	&:hover, &:focus {
+		background: $link;
+		color: #fff;
+		border-color: darken($link, 10%);
+	}
+}
+.program .content {
+	padding: 30px 20px 20px;
+	text-align: center;
+	@media (min-width: $break-small) and (max-width: $break-medium - 1) {
+		text-align: left;
+		float: left;
+		width: 60%;
+		padding: 0 1em;
 	}
 }
 .border-img {
 	position: relative;
+	@media (min-width: $break-small) and (max-width: $break-medium - 1) {
+		float: left;
+		width: 40%;
+	}
 }
 .border-img:after {
 	content: '';
@@ -136,7 +188,7 @@ Dance Programs
 	bottom: 10px;
 	left: 10px;
 	right: 10px;
-	z-index: 12;
+	z-index: 10;
 }
 
 /* ---------------------------------------------------------------
@@ -147,27 +199,39 @@ Established in 1972
 	background: #f5f5f5 url(../images/established-bg.gif) no-repeat center bottom;
 	padding: 60px 0;
 	.content {
-		width: 60%;
+		width: 95%;
 		margin: 0 auto;
+		@media (min-width: $break-medium) {
+			width: 60%;
+		}
 	}
 	& h2 {
 		margin: 0;
 		text-transform: uppercase;
 		font-weight: 900;
-		font-size: 43px;
+		font-size: 26px;
 		font-family: $body-font;
 		margin-bottom: 10px;
+		@media (min-width: $break-small) {
+			font-size: 43px;
+		}
 	}
 	& p {
 		margin: 0;
-		font-size: 20px;
-
+		font-size: 15px;
+		@media (min-width: $break-small) {
+			font-size: 20px;
+		}
 	}
 }
 .established-photo {
-	background: url(../images/established.jpg) no-repeat right top;
-	background-size: cover;
-	height: 430px;
+	display: none;
+	@media (min-width: 700px) {
+		background: url(../images/established.jpg) no-repeat right top;
+		background-size: cover;
+		height: 430px;
+		display: block;
+	}
 }
 
 /* ---------------------------------------------------------------
@@ -176,27 +240,39 @@ Learn More About Us
 .learn {
 	& .top {
 		background: #fff;
-		padding-top: 110px;
-		padding-bottom: 230px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		@media (min-width: $break-medium) {
+			padding-top: 110px;
+			padding-bottom: 180px;
+		}
+		@media (min-width: $break-large) {
+			padding-bottom: 230px;
+		}
 	}
 	& .bot {
 		background: $link url(../images/program-bg.gif) no-repeat center bottom;
-		padding-bottom: 90px;
+		@media (min-width: $break-medium) {
+			padding-bottom: 90px;
+		}
 	}
 }
 
 .learn .top h2 {
 	text-transform: uppercase;
-	font-size: 43px;
+	font-size: 36px;
 	font-family: $body-font;
 	font-weight: 900;
 	margin: 0;
+	@media (min-width: $break-small) {
+		font-size: 43px;
+	}
 }
 .learn-spot {
-	margin-top: -50%;
 	& img {
 		display: block;
 		margin: 0 auto;
+		width: 100%;
 	}
 	& h5 {
 		font-family: $body-font;
@@ -205,40 +281,75 @@ Learn More About Us
 		font-size: 14px;
 		font-weight: normal;
 		color: #fff;
-		margin: 25px 0;
+		margin-top: 5px;
+		@media (min-width: $break-medium) {
+			margin: 25px 0;
+		}
 	}
 	& h4 {
 		font-family: $body-font;
 		font-weight: 900;
 		color: #fff;
-		font-size: 24px;
+		font-size: 18px;
 		margin: 0 0 15px 0;
+		@media (min-width: $break-medium) {
+			font-size: 24px;
+		}
 		& a {
 			color: #fff;
 			text-decoration: none;
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
 		}
 	}
 	 & p {
 	 	color: #fff;
 	 	margin: 0;
+	 	@media (max-width: $break-medium - 1) {
+			font-size: 15px;
+		}
 	 }
+}
+.learn-spot .content {
+	@media (min-width: $break-small) and (max-width: $break-medium - 1) {
+		text-align: left;
+		float: left;
+		width: 60%;
+		padding: 0 1em;
+	}
+}
+.learn-spot {
+	padding: 1em 0;
+	@media (min-width: $break-medium) {
+		margin-top: -50%;
+	}
 }
 
 /* ---------------------------------------------------------------
 Announcements
 --------------------------------------------------------------- */
 .announcements {
-	padding: 1em;
-	margin-top: -120px;
 	& h3 {
 		text-transform: uppercase;
 		font-family: $body-font;
 		font-weight: 900;
-		font-size: 31px;
-		margin-bottom: 1.5em;
+		font-size: 28px;
+		@media (min-width: $break-medium) {
+			margin-bottom: 1.5em;
+			margin-top: 2.5em;
+			font-size: 24px;
+		}
+		@media (min-width: $break-large) {
+			font-size: 27px;
+			margin-top: 1em;
+		}
 	}
 	& a {
 		color: #fff;
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
 	}
 	& ul {
 		list-style: none;
@@ -248,7 +359,9 @@ Announcements
 			border-bottom: 1px solid rgba(255,255,255,.2);
 			& a {
 				color: #fff;
-
+				&:hover, &:focus {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
@@ -262,6 +375,14 @@ Announcements
 			font-size: 14px;
 			text-decoration: underline;
 		}
+	}
+}
+.announcements {
+	@media (min-width: $break-medium) {
+		margin-top: -120px;
+	}
+	@media (min-width: $break-large) {
+		padding: 1em;
 	}
 }
 

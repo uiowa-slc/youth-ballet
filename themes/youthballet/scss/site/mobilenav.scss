@@ -273,7 +273,8 @@ html, body {
 }
 @media only screen and (min-width: 768px) {
 	.cd-primary-nav {
-		padding: 80px 0;
+		display: none;
+		visibility: hidden;
 	}
 }
 @media only screen and (min-width: 1170px) {
