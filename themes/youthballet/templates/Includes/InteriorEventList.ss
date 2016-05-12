@@ -1,30 +1,26 @@
 <% with $Page(calendar) %>
-	<% if $AllChildren %>
-		<div class="interiorEventList">
+	<% if $UpcomingEvents %>
+		<section class="eventlist">
 			<div class="container">
 				<h3 class="eventlist-heading">Calendar</h3>
-				<div class="interior-events">
-					<% loop $AllChildren %>
+				<div class="interior-flickity">
+					<% loop $UpcomingEvents %>
 						<div class="gallery-cell clearfix">
-							<% loop $DateTimes %>
+							<% loop $Event.DateTimes %>
 								<p class="eventlist-date">
-									<% with $StartDate %>
-										<span class="month">$Format(M)</span>$Format(j)<% end_with %><% if $EndDate && $EndDate != $StartDate %>&ndash;<% with $EndDate %>$Format(j)
+									<% with $StartDate %>$Format(M j)<% end_with %><% if $EndDate && $EndDate != $StartDate %>&ndash;<% with $EndDate %>$Format(M j)
 										<% end_with %>
-									<% end_if %>
-									<if StartTime %>
-										<span class="eventlist-time">$StartTime.Format("g:i a")<% if $EndTime %><% with $EndTime %>&ndash;$Format("g:i a")<% end_with %></span>
 									<% end_if %>
 								</p>
 							<% end_loop %>
-							<h3 class="eventlist-title">
+							<p class="eventlist-title">
 								<a href="$Link">$Title</a>
-							</h3>
+							</p>
 						</div>
 			    	<% end_loop %>
 		    	</div>
 		    	<a href="{$BaseHref}calendar/" class="calendarlink">Full Calendar</a>
 		    </div>
-	   </div>
+	   </section>
     <% end_if %>
 <% end_with %>

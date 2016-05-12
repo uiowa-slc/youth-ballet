@@ -19,8 +19,9 @@ module.exports = function(grunt) {
 			dist: {
 				src: [
 					'division-bar/js/division-bar.js',
-					'<%= project.src %>/js/plugins/jquery-accessibleMegaMenu.js',
+					// '<%= project.src %>/js/plugins/jquery-accessibleMegaMenu.js',
 					'<%= project.src %>/js/plugins/flickity.pkgd.js',
+					'<%= project.src %>/js/plugins/z-menubar.js',
 					'<%= project.src %>/js/main.js'
 				],
 				dest: '<%= project.src %>/js/build/production.js'

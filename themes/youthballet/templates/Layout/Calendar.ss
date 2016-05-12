@@ -1,7 +1,7 @@
 <% include HeaderPhoto %>
 <main class="container main" role="main">
-
 	<div class="row">
+
 		<!-- Side Bar -->
 		<% if $Children || $Parent %><%--Determine if Side Nav should be rendered, you can change this logic --%>
 			<div class="col-lg-3 sidebar">

@@ -1,11 +1,9 @@
+<%-- Mobile navigation menu button --%>
+<button class="cd-primary-nav-trigger" href="#">
+	<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+</button>
 
-<header class="cd-header" role="banner">
-	<a class="cd-primary-nav-trigger" href="#0">
-		<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
-	</a>
-</header>
-
-
+<%-- Mobile navigation menu --%>
 <ul class="cd-primary-nav">
 	<li class="cd-label">Our Programs</li>
 	<li><a href="{$BaseHref}programs/childrens-division/">Children's Division</a></li>

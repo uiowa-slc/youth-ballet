@@ -8,32 +8,26 @@
 				<h1>$Title</h1>
 
 				<% if $Query %>
-					<p class="searchQuery">You searched for &quot;{$Query}&quot;</p>
+					<p class="searchQuery">You searched for <strong>&quot;{$Query}&quot;</strong></p>
 				<% end_if %>
 
 				<% if $Results %>
 				<ul id="SearchResults">
 					<% loop $Results %>
 					<li class="clearfix">
-						<p class="search-type">$NiceName</p>
-						<h4>
-							<a href="$Link">
+						<p><strong class="results-title"><a href="$Link">
 								<% if $MenuTitle %>
 								$MenuTitle
 								<% else %>
 								$Title
 								<% end_if %>
-							</a>
-						</h4>
+							</a></strong>
+						<br>
 						<% if $Content %>
-							<p>$Content.LimitWordCountXML</p>
+							$Content.LimitWordCountXML
 						<% end_if %>
-						<% if $ArtworkText %>
-							<p>$ArtworkText.LimitWordCountXML</p>
-						<% end_if %>
-						<% if $ExhibitionDescription %>
-							<p>$ExhibitionDescription.LimitWordCountXML</p>
-						<% end_if %>
+						</p>
+						<div class="results-url">$AbsoluteLink</div>
 
 
 						<!-- <a class="readMoreLink" href="$Link" title="Read more about &quot;{$Title}&quot;">Read more about &quot;{$Title}&quot;...</a> -->

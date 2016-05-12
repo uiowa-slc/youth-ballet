@@ -19,12 +19,16 @@
 											<img src="$FeaturedImage.CroppedImage(120,120).URL" alt="$Title" class="right">
 										</a>
 									<% end_if %>
+									<% if $FeaturedImage %>
+										<img src="$FeaturedImage.SetWidth(100).URL" alt="$Title Featured Image" class="right entryphoto">
+									<% end_if %>
 									<h3 class="newsblock-title"><a href="$Link">$Title</a></h3>
-									<p class="entry-date">
-										Posted on <time datetime="$PublishDate.format(c)" itemprop="datePublished">$PublishDate.format(F d Y)</time>
-									</p>
-									<p class="entry-content">$Content.LimitCharacters(250)</p>
+									<%-- <p class="entry-date">
+										<time datetime="$PublishDate.format(c)" itemprop="datePublished">$PublishDate.format("F d, Y")</time>
+									</p> --%>
+									<p class="entry-content">$Content.LimitCharacters(250)<a href="$Link"> Read more...</a></p>
 								</div>
+								<hr>
 							</div>
 						<% end_loop %>
 					</div>

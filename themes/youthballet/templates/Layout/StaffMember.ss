@@ -10,10 +10,10 @@
 					<h1 class="title">$Title</h1>
 					<!-- Position -->
 					<% if $StaffPosition %>
-						<h3 class="position">$StaffPosition</h3>
+						<h4 class="position">$StaffPosition</h4>
 					<% end_if %>
 					<hr />
-					<img src="$StaffPhoto.SetWidth(400).URL" alt="$Title" class="staffmember-img">
+					<img src="$StaffPhoto.CroppedImage(400,500).URL" alt="$Title" class="staffmember-img">
 
 					<!-- Email & Phone -->
 					<% if $StaffEmailAddress || $StaffPhoneNumber %>
@@ -21,14 +21,12 @@
 							<% if $StaffEmailAddress %><li><strong>Email:</strong> <a href="mailto:$StaffEmailAddress">$StaffEmailAddress</a></li><% end_if %>
 							<% if $StaffPhoneNumber %><li><strong>Phone:</strong> $StaffPhoneNumber</li><% end_if %>
 						</ul>
-
 					<% end_if %>
 
 					$Content
 					$Form
 				</div>
 			</section>
-			<% include ChildPages %>
 		</div><!-- end .col -->
 
 		<!-- Side Bar -->
@@ -41,6 +39,5 @@
 
 	</div><!-- end .row -->
 </main><!-- end .container -->
-<% include PhotoGallery %>
 <% include InteriorEventList %>
 <% include Enroll %>

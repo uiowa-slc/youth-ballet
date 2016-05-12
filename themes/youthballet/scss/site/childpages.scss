@@ -18,22 +18,22 @@ Child Page Summary
 	overflow: hidden;
 	text-decoration: none;
 }
-.child-block-img {
-	display: block;
-	float: right;
-	margin: 0 0 15px 15px;
-	width: 40%;
-	@media (min-width: $break-medium) {
-		float: left;
-		margin: 0 0 20px 0;
-	}
-}
-.withphoto .child-block-content {
-	@media (min-width: $break-medium) {
-		margin-left: 45%;
-		overflow: hidden;
-	}
-}
+// .child-block-img {
+// 	display: block;
+// 	float: right;
+// 	margin: 0 0 15px 15px;
+// 	width: 40%;
+// 	@media (min-width: $break-medium) {
+// 		float: left;
+// 		margin: 0 0 20px 0;
+// 	}
+// }
+// .withphoto .child-block-content {
+// 	@media (min-width: $break-medium) {
+// 		margin-left: 45%;
+// 		overflow: hidden;
+// 	}
+// }
 .child-block .title {
 	margin: 0;
 }

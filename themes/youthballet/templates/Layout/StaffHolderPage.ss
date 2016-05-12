@@ -13,12 +13,14 @@
 				<ul class="staffholder justify justify-3">
 					<% loop $Children %>
 						<li class="justify-item">
-							<% if $StaffPhoto %>
-								<a href="$Link"><img src="$StaffPhoto.CroppedImage(300,400).URL" alt="$Title"></a>
-							<% end_if %>
-							<h4 class="title"><a href="$Link">$Title</a></h4>
-							<% if $StaffPosition %><em class="position">$StaffPosition</em><% end_if %>
-						</li>&nbsp;
+							<a href="$Link">
+								<% if $StaffPhoto %>
+									<img src="$StaffPhoto.CroppedImage(300,400).URL" alt="">
+								<% end_if %>
+								<h4 class="title">$Title</h4>
+								<% if $StaffPosition %><em class="position">$StaffPosition</em><% end_if %>
+							</a>
+						</li>
 					<% end_loop %>
 					<li class="justify-item filler"></li>
 					<li class="justify-item filler"></li>

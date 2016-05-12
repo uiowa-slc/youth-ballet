@@ -9,7 +9,7 @@
 				<div class="vevent">
 
 					<% with CurrentDate %>
-						<p class="dates">$DateRange<% if StartTime %> $TimeRange<% end_if %></p>
+						<p class="dates">$DateRange<% if StartTime %><br> $TimeRange<% end_if %></p>
 						<p><a href="$ICSLink" title="<% _t('CalendarEvent.ADD','Add to Calendar') %>">Add this to Calendar</a></p>
 					<% end_with %>
 

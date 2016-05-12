@@ -10,13 +10,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title | $SiteConfig.Title<% end_if %></title>
 	<script src="{$ThemeDir}/js/modernizr.js"></script>
-	<!-- Favicon -->
+	<%-- Favicon --%>
 	<link rel="shortcut icon" href="{$BaseHref}favicon.ico" type="image/x-icon">
-	<!-- CSS -->
+	<%-- CSS --%>
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
-	<!-- Typekit -->
+	<%-- Typekit --%>
 	<% include TypeKit %>
-	<!-- Picturefill -->
+	<%-- Picturefill --%>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script>
 	<!--[if lt IE 9]>
 		 <script src="{$ThemeDir}/js/ie/html5shiv.js"></script>
@@ -24,23 +24,13 @@
 	<![endif]-->
 </head>
 <body class="$ClassName">
+	<a id="skiptocontent" class="visuallyhidden focusable" href="#main-content">Skip to main content</a>
 	<% include UiowaBarBootstrap %>
-	<% include Header %>
+	<% include MobileMenu %>
 	$Layout
 	<% include Footer %>
-<%-- For use with shifternavigation:
-	<div class="shifter-page">
-		<a id="skiptocontent" class="visuallyhidden focusable" href="#main-content">Skip to main content</a>
-		<% include Header %>
-		$Layout
-		<% include Footer %>
-	</div> --%>
 
-	<!-- Mobile Navigation Slideout -->
-	<%-- <% include ShifterNavigation %> --%>
-
-
-	<!-- JS -->
+	<%-- JS --%>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
 	<% include GoogleAnalytics %>

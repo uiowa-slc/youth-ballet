@@ -11,6 +11,7 @@ class CalendarExtension extends DataExtension {
 	public function updateCMSFields(FieldList $fields) {
 		//$fields = parent::getCMSFields();
 		$fields->removeByName("Testimonial");
+		$fields->removeByName("Announcements");
 
 		return $fields;
 	}
