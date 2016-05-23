@@ -141,6 +141,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', e
 	display: block;
 	width: 100%;
 }
+.button {
+	display: inline-block;
+	background-color: $link;
+	color: #fff;
+	border-radius: 3px;
+	padding: 1px 10px;
+	text-decoration: none;
+	&:hover, &:focus {
+		background-color: darken( $link, 10% );
+		color: #fff;
+		text-decoration: none;
+	}
+}
 
 /* ---------------------------------------------------------------
 Side bar testimonial
