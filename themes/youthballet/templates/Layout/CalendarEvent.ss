@@ -39,3 +39,5 @@
 
 	</div><!-- end .row -->
 </main><!-- end .container -->
+<% include InteriorEventList %>
+<% include Enroll %>

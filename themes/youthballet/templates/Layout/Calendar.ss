@@ -28,6 +28,5 @@
 	</div><!-- end .row -->
 </main><!-- end .container -->
 <% include PhotoGallery %>
-<% include InteriorEventList %>
 <% include Enroll %>
 
