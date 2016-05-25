@@ -5638,7 +5638,6 @@ $(document).ready(function() {
 		imagesLoaded: true,
 		lazyLoad: true,
 		lazyLoad: 2,
-		initialIndex: 1,
 		selectedAttraction: 0.01,
 		friction: 0.15,
 		pageDots: false,
