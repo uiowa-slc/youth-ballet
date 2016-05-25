@@ -10,8 +10,8 @@
 			</div>
 			<div class="col-md-5">
 				<blockquote class="enroll-testimonial">
-					<p class="quote">"It was great to see teachers use the potential of the student’s strengths and choreograph parts for them that integrate into different pieces."</p>
-					<cite class="cite">Mackenzie Diblasi<em>Youth Ballet</em></cite>
+					<p class="quote">"I took adult ballet in 2012 and now looking back at that wonderful experience I fully appreciate the quality of teaching I received."</p>
+					<cite class="cite">Adult ballet student</cite>
 				</blockquote>
 			</div>
 		</div>
