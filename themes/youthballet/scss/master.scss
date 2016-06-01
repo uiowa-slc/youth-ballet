@@ -13,15 +13,13 @@
 @import "elements/grid-bootstrap";
 @import "elements/tables";
 
-
 /* Division Bar
 -------------------------------------------*/
-@import "../../../division-bar/scss/_uiowa-bar-bootstrap.scss";
+@import "../../../division-bar/scss/_division-bar.scss";
 
 /* Plugins
 -------------------------------------------*/
 @import "plugins/flickity";
-
 
 /* Layout
 -------------------------------------------*/
@@ -47,4 +45,3 @@
 /* Print
 -------------------------------------------*/
 @import "site/print";
-
