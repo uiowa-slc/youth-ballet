@@ -1,17 +1,27 @@
-<% include SideNavigation %>
+<% include HeaderPhoto %>
+<main class="container main" role="main">
 
-<div id="announcements-right">
-<h2>Schedules</h2><img class="pdf" src="$ThemeDir/images/document-pdf-text.png" alt="PDF" />
-		<% include Announcements %>
-	</div>
-	
-<a href="$BaseHref/enrollment/" class="large orange awesome">Enroll Now</a>
-	
-<h2>$Title</h2>
-<div class="main-content">
-$Content
-</div>
+	<div class="row">
 
+		<!-- Main Content -->
+		<div class="<% if $Children || $Parent %>col-lg-9 col-lg-push-3 children<% else %>col-md-10 col-md-offset-1<% end_if %>">
+			<section id="main-content" tabindex="-1">
+				<h1>$Title</h1>
+				$Content
+				$Form
+			</section>
+			<% include ChildPages %>
+		</div><!-- end .col -->
 
-
-
+		<!-- Side Bar -->
+		<% if $Children || $Parent %><%--Determine if Side Nav should be rendered, you can change this logic --%>
+			<div class="col-lg-3  col-lg-pull-9 sidebar">
+				<% include SideNav %>
+				<% include Testimonial %>
+			</div>
+		<% end_if %>
+	</div><!-- end .row -->
+</main><!-- end .container -->
+<% include PhotoGallery %>
+<% include InteriorEventList %>
+<% include Enroll %>
