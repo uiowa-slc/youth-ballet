@@ -1,9 +1,9 @@
 <% if $TestimonialQuote %>
-	<blockquote class="testimonial">
+	<blockquote class="testimonial <% if $TestimonialName || $TestimonialAttribution %>name<% end_if %>">
 		<% if $TestimonialPhoto %>
 			<img src="$TestimonialPhoto.CroppedFocusedImage(200,200).URL" alt="Testimony from $TestimonialName">
 		<% end_if %>
-		<% if $TestimonialName %>
+		<% if $TestimonialName || $TestimonialAttribution %>
 			<footer>
 				<cite class="cite">
 					$TestimonialName
@@ -15,4 +15,5 @@
 			<p class="quote">"$TestimonialQuote"</p>
 		<% end_if %>
 	</blockquote>
+	<a href="{$BaseHref}about/testimonals/" class="more">more testimonials</a>
 <% end_if %>

@@ -162,17 +162,12 @@ Side bar testimonial
 	padding: 5px 10px;
 	margin: 2em 0 0;
    border: none;
-	& img {
-		display: block;
-		margin: 0 auto;
-		border-radius: 50%;
-		margin-bottom: -64px;
-	}
 	& .quote {
 		font-family: $heading-font;
 		font-style: italic;
 		font-size: 17px;
 		color: #555;
+		margin-bottom: 0;
 	}
 	& .cite {
 		display: block;
@@ -201,6 +196,19 @@ Side bar testimonial
 		}
 	}
 }
+.sidebar .testimonial img {
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.sidebar .testimonial.name img {
+	margin-bottom: -42px;
+}
+.sidebar .more {
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
 
 
 /* ---------------------------------------------------------------
