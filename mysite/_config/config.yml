@@ -3,3 +3,12 @@ SiteTree:
     - MetaTitleExtension
 MetaTitleExtension:
   InsertBefore: 'MetaDescription'
+SiteConfig:
+  extensions:
+    - SiteConfigExtension
+Calendar:
+  extensions:
+    - CalendarExtension
+CalendarEvent:
+  extensions:
+    - CalendarEventExtension
