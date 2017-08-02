@@ -10,6 +10,7 @@
 	</picture>
 	<div class="inner">
 		<h3>$HomePhotoTitle</h3>
+		<% if $HomePhotoSubtitle %><h4>$HomePhotoSubtitle</h4><% end_if %>
 		<a href="$HomePhotoLink.Link" class="main-photo-link">$HomePhotoButtonText</a>
 	</div>
 </div>

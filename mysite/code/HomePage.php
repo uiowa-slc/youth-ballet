@@ -2,6 +2,7 @@
 class HomePage extends Page {
 	private static $db = array(
 		"HomePhotoTitle" => "Text",
+		"HomePhotoSubtitle" => "Text",
 		"HomePhotoButtonText" => "Text",
 		"ProgramsPageContent" => "Text",
 		"Program1Title" => "Text",
@@ -41,6 +42,7 @@ class HomePage extends Page {
 		$fields->removeByName("Content");
 
 		$fields->addFieldToTab("Root.Main", new TextField("HomePhotoTitle", "Photo Title"));
+		$fields->addFieldToTab("Root.Main", new TextField("HomePhotoSubtitle", "Photo Subtitle"));
 		$fields->addFieldToTab("Root.Main", new TextField("HomePhotoButtonText", "Photo Button Text"));
 		$fields->addFieldToTab("Root.Main", new TreeDropdownField("HomePhotoLinkID", "Photo Button Link", "SiteTree"));
 

@@ -13,16 +13,17 @@
 .HomePage .page-photo .inner {
 	position: absolute;
 	z-index: 5;
-	bottom: 60px;
-	width: 450px;
+	bottom: 30px;
+	width: 90%;
 	left: 50%;
-	margin-left: -225px;
+	margin-left: -45%;
 	text-align: center;
-	& h3 {
+	& h3, & h4 {
 		margin: 0;
 		font-size: 36px;
 		text-align: center;
 		color: #fff;
+		line-height: 1.2;
 		text-transform: uppercase;
 		text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 		font-family: $body-font;
@@ -30,6 +31,19 @@
 		@media (min-width: $break-small) {
 			font-size: 54px;
 		}
+	}
+	& h4 {
+		font-weight: bold;
+		font-size: 23px;
+		text-transform: none;
+		@media (min-width: $break-small) {
+			font-size: 33px;
+		}
+	}
+	@media (min-width: $break-medium) {
+		width: 70%;
+		margin-left: -35%;
+		bottom: 60px;
 	}
 }
 .HomePage .page-photo .inner .main-photo-link {
