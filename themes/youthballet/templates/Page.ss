@@ -13,7 +13,7 @@
 	<%-- Favicon --%>
 	<link rel="shortcut icon" href="{$BaseHref}favicon.ico" type="image/x-icon">
 	<%-- CSS --%>
-	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
+	<link rel="stylesheet" href="{$ThemeDir}/css/main.css" />
 	<%-- Typekit --%>
 	<% include TypeKit %>
 	<%-- Picturefill --%>
@@ -25,7 +25,7 @@
 </head>
 <body class="$ClassName">
 	<a id="skiptocontent" class="visuallyhidden focusable" href="#main-content">Skip to main content</a>
-	<% include UiowaBarBootstrap %>
+	<% include UiowaBar %>
 	<% include MobileMenu %>
 	$Layout
 	<% include Footer %>
@@ -33,7 +33,7 @@
 	<%-- JS --%>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="{$ThemeDir}/js/build/production.min.js"></script>
-	<% include GoogleAnalytics %>
+	$Analytics
 	$BetterNavigator
 </body>
 </html>
