@@ -16,7 +16,7 @@
 								<div class="newsblock-info">
 									<% if $FeaturedImagePhoto %>
 										<a href="$Link">
-											<img src="$FeaturedImage.CroppedImage(120,120).URL" alt="$Title" class="right">
+											<img src="$FeaturedImage.FocusFill(120,120).URL" alt="$Title" class="right">
 										</a>
 									<% end_if %>
 									<% if $FeaturedImage %>
