@@ -1,0 +1,40 @@
+.footer {
+	background-color: #000;
+	color: #bbb;
+	position: relative;
+	padding: 1em 0;
+	font-size: 14px;
+	& a {
+		color: #bbb;
+	}
+	@media (max-width: $break-small - 1 ) {
+		text-align: center;
+	}
+}
+/* logo
+----------------------------------------------------*/
+.footer-logo img {
+	display: block;
+	margin: 0 auto;
+}
+
+/* navigation links
+----------------------------------------------------*/
+.footer-nav li a {
+	display: block;
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+	@media (max-width: $break-small - 1 ) {
+		padding: 8px 0;
+	}
+}
+
+/* address and copyright text
+----------------------------------------------------*/
+.footer-address, .copy {
+	margin: 0;
+}
+.footer .row > div {
+	padding: 1em;
+}

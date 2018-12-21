@@ -1,9 +1,9 @@
-SiteTree:
+SilverStripe\CMS\Model\SiteTree:
   extensions:
     - MetaTitleExtension
 MetaTitleExtension:
-  InsertBefore: 'MetaDescription'
-SiteConfig:
+  InsertBefore: MetaDescription
+SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - SiteConfigExtension
 Calendar:

@@ -1,31 +1,30 @@
 {
 	"name": "silverstripe/installer",
-	"description": "The SilverStripe Framework Installer",
-	"require": {
-		"php": ">=5.3.2",
-		"silverstripe/cms": "3.6.*@stable",
-		"silverstripe/framework": "3.6.*@stable",
-		"silverstripe/event-calendar": "*",
+    "type": "silverstripe-recipe",
+    "description": "The SilverStripe Framework Installer",
+    "require": {
+        "php": ">=5.6.0",
+        "silverstripe/cms": "~4.1.0",
+        "silverstripe/framework": "~4.1.0",
 		"silverstripe/userforms": "*",
 		"silverstripe/googlesitemaps": "*",
-		"jonom/silverstripe-betternavigator" : "2.1.0",
+		"jonom/silverstripe-betternavigator" : "~4.1.1",
 		"jonom/focuspoint" : "*",
-		"silverstripe/blog" : "2.*",
+		"silverstripe/blog" : "*",
 		"colymba/gridfield-bulk-editing-tools" : "*",
-		"md/division-bar" : "*",
 		"md/uiowa-bar" : "*",
 		"md/division-analytics" : "*",
-		"undefinedoffset/sortablegridfield": "*",
-		"silverstripe/activedirectory" : "3.*"
+		"undefinedoffset/sortablegridfield": "*"
 	},
-
+	"extra": {
+    "expose": [
+        "themes/youthballet/dist",
+        "themes/youthballet/css",
+        "themes/youthballet/fonts"
+    	]
+	},
 	"minimum-stability": "dev",
 		"repositories": [
-		{
-				"type": "vcs",
-				"url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
-
-		},
 		{
 				"type": "vcs",
 				"url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
@@ -36,11 +35,6 @@
 				"url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
 
 		},
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory"
-
-        },
         {
              "type": "vcs",
              "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-betternavigator"

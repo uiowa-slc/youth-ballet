@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="clearfix">
 			<a href="{$BaseHref}" class="logo">
-				<img src="{$ThemeDir}/images/youth-ballet-logo.png" alt="Youth Ballet and Community Dance School Logo">
+				<img src="$resourceURL('themes/youthballet/dist/images/youth-ballet-logo.png')" alt="Youth Ballet and Community Dance School Logo">
 			</a>
 			<nav role="navigation" class="nav-wrapper no-print" aria-label="Main menu">
 				<ul class="main-nav unstyled clearfix">

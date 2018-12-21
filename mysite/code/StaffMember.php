@@ -1,4 +1,9 @@
 <?php
+
+use SilverStripe\Assets\Image;
+use SilverStripe\Forms\TextField;
+use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 class StaffMember extends Page {
 
 	private static $db = array(
@@ -8,7 +13,7 @@ class StaffMember extends Page {
 	);
 
 	private static $has_one = array(
-		"StaffPhoto" => "Image",
+		"StaffPhoto" => Image::class,
 	);
 
 
@@ -25,32 +30,5 @@ class StaffMember extends Page {
 	}
 
 	//private static $allowed_children = array("");
-
-}
-class StaffMember_Controller extends Page_Controller {
-
-	/**
-	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
-	 * permissions or conditions required to allow the user to access it.
-	 *
-	 * <code>
-	 * array (
-	 *     'action', // anyone can access this action
-	 *     'action' => true, // same as above
-	 *     'action' => 'ADMIN', // you must have ADMIN permissions to access this action
-	 *     'action' => '->checkAction' // you can only access this action if $this->checkAction() returns true
-	 * );
-	 * </code>
-	 *
-	 * @var array
-	 */
-	private static $allowed_actions = array (
-	);
-
-	public function init() {
-		parent::init();
-
-
-	}
 
 }

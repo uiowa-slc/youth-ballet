@@ -1,28 +1,15 @@
 <?php
 
-global $project;
-$project = 'mysite';
-
-global $database;
-$database = 'youthballet';
-
-require_once("conf/ConfigureFromEnv.php");
-
-MySQLDatabase::set_connection_charset('utf8');
-
-// Set the current theme. More themes can be downloaded from
-// http://www.silverstripe.org/themes/
-SSViewer::set_theme('simple');
-
-FulltextSearchable::enable(array('SiteTree'));
-
-// Set the site locale
-i18n::set_locale('en_US');
+use SilverStripe\ORM\Connect\MySQLDatabase;
+use SilverStripe\View\SSViewer;
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\ORM\Search\FulltextSearchable;
+use SilverStripe\i18n\i18n;
+use SilverStripe\Control\Director;
+use SilverStripe\Security\MemberAuthenticator\MemberAuthenticator;
+use SilverStripe\Security\Authenticator;
 
 
 if(Director::isLive()) {
 	Director::forceSSL();
 }
-GD::set_default_quality(80);
-Authenticator::unregister('MemberAuthenticator');
-Authenticator::set_default_authenticator('SAMLAuthenticator');

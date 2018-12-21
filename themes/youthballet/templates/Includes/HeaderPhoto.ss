@@ -4,11 +4,11 @@
 
 		<picture class="picture">
 			<!--[if IE 9]><video style="display: none;"><![endif]-->
-			<source srcset="$BackgroundPhoto.CroppedFocusedImage(1200,500).URL" media="(min-width: 980px)">
-			<source srcset="$BackgroundPhoto.CroppedFocusedImage(980,400).URL" media="(min-width: 768px)">
-			<source srcset="$BackgroundPhoto.CroppedFocusedImage(768,400).URL" media="(min-width: 480px)">
+			<source srcset="$BackgroundPhoto.FocusFill(1200,500).URL" media="(min-width: 980px)">
+			<source srcset="$BackgroundPhoto.FocusFill(980,400).URL" media="(min-width: 768px)">
+			<source srcset="$BackgroundPhoto.FocusFill(768,400).URL" media="(min-width: 480px)">
 			<!--[if IE 9]></video><![endif]-->
-			<img srcset="$BackgroundPhoto.CroppedFocusedImage(480,400).URL" alt="$Title">
+			<img srcset="$BackgroundPhoto.FocusFill(480,400).URL" alt="$Title">
 		</picture>
 	</div>
 <% else %>
@@ -16,11 +16,11 @@
 		<% include MainNav %>
 		<picture class="picture">
 			<!--[if IE 9]><video style="display: none;"><![endif]-->
-			<source srcset="$SiteConfig.DefaultPhoto.CroppedFocusedImage(1200,400).URL" media="(min-width: 980px)">
-			<source srcset="$SiteConfig.DefaultPhoto.CroppedFocusedImage(980,400).URL" media="(min-width: 768px)">
-			<source srcset="$SiteConfig.DefaultPhoto.CroppedFocusedImage(768,400).URL" media="(min-width: 480px)">
+			<source srcset="$SiteConfig.DefaultPhoto.FocusFill(1200,400).URL" media="(min-width: 980px)">
+			<source srcset="$SiteConfig.DefaultPhoto.FocusFill(980,400).URL" media="(min-width: 768px)">
+			<source srcset="$SiteConfig.DefaultPhoto.FocusFill(768,400).URL" media="(min-width: 480px)">
 			<!--[if IE 9]></video><![endif]-->
-			<img srcset="$SiteConfig.DefaultPhoto.CroppedFocusedImage(480,400).URL" alt="$Title">
+			<img srcset="$SiteConfig.DefaultPhoto.FocusFill(480,400).URL" alt="$Title">
 		</picture>
 	</div>
 <% end_if %>

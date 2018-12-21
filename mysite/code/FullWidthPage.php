@@ -20,7 +20,3 @@ class FullWidthPage extends Page {
 		return $fields;
 	}
 }
-
-class FullWidthPage_Controller extends Page_Controller {
-
-}
