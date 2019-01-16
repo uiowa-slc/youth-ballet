@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab89b0abbba241dca7ef0be0cd171863",
+    "content-hash": "03a247c42fbc904930edff4ebf2c8002",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -1248,12 +1248,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-admin.git",
-                "reference": "5f60d2a4b2c7f54da3c641f8797092927092bd45"
+                "reference": "05a081b45413af15ce763a1532e1562f754fea54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/5f60d2a4b2c7f54da3c641f8797092927092bd45",
-                "reference": "5f60d2a4b2c7f54da3c641f8797092927092bd45",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-admin/zipball/05a081b45413af15ce763a1532e1562f754fea54",
+                "reference": "05a081b45413af15ce763a1532e1562f754fea54",
                 "shasum": ""
             },
             "require": {
@@ -1301,7 +1301,7 @@
                 "admin",
                 "silverstripe"
             ],
-            "time": "2018-12-04 21:49:43"
+            "time": "2018-12-18 22:28:52"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -1351,7 +1351,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
-            "time": "2018-12-11 23:34:52"
+            "time": "2018-12-11T23:34:52+00:00"
         },
         {
             "name": "silverstripe/assets",
@@ -1413,7 +1413,7 @@
                 "assets",
                 "silverstripe"
             ],
-            "time": "2018-12-06 08:52:12"
+            "time": "2018-12-06T08:52:12+00:00"
         },
         {
             "name": "silverstripe/blog",
@@ -1479,7 +1479,7 @@
                 "news",
                 "silverstripe"
             ],
-            "time": "2018-12-12 14:54:44"
+            "time": "2018-12-12T14:54:44+00:00"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -1545,7 +1545,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2018-11-19 01:42:14"
+            "time": "2018-11-19T01:42:14+00:00"
         },
         {
             "name": "silverstripe/cms",
@@ -1611,7 +1611,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2018-12-13 02:21:49"
+            "time": "2018-12-13T02:21:49+00:00"
         },
         {
             "name": "silverstripe/config",
@@ -1656,7 +1656,7 @@
                 "BSD-3-Clause"
             ],
             "description": "SilverStripe configuration based on YAML and class statics",
-            "time": "2018-07-23 17:39:43"
+            "time": "2018-07-23T17:39:43+00:00"
         },
         {
             "name": "silverstripe/framework",
@@ -1770,7 +1770,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2018-12-12 01:11:21"
+            "time": "2018-12-12T01:11:21+00:00"
         },
         {
             "name": "silverstripe/googlesitemaps",
@@ -1829,7 +1829,7 @@
                 "seo",
                 "silverstripe"
             ],
-            "time": "2018-09-25 01:25:46"
+            "time": "2018-09-25T01:25:46+00:00"
         },
         {
             "name": "silverstripe/graphql",
@@ -1871,7 +1871,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "GraphQL server for SilverStripe models and other data",
-            "time": "2018-11-06 22:38:25"
+            "time": "2018-11-06T22:38:25+00:00"
         },
         {
             "name": "silverstripe/lumberjack",
@@ -1922,7 +1922,7 @@
                 }
             ],
             "description": "A module to make managing pages in a GridField easy without losing any of the functionality that you're used to in the CMS.",
-            "time": "2018-08-29 04:25:00"
+            "time": "2018-08-29T04:25:00+00:00"
         },
         {
             "name": "silverstripe/reports",
@@ -1985,7 +1985,7 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2018-11-22 20:12:59"
+            "time": "2018-11-22T20:12:59+00:00"
         },
         {
             "name": "silverstripe/segment-field",
@@ -2040,7 +2040,7 @@
                 "segment",
                 "silverstripe"
             ],
-            "time": "2018-06-17 22:54:53"
+            "time": "2018-06-17T22:54:53+00:00"
         },
         {
             "name": "silverstripe/siteconfig",
@@ -2091,7 +2091,7 @@
                 "silverstripe",
                 "siteconfig"
             ],
-            "time": "2018-11-09 12:29:14"
+            "time": "2018-11-09T12:29:14+00:00"
         },
         {
             "name": "silverstripe/tagfield",
@@ -2145,7 +2145,7 @@
                 "silverstripe",
                 "tag"
             ],
-            "time": "2018-09-17 21:25:59"
+            "time": "2018-09-17T21:25:59+00:00"
         },
         {
             "name": "silverstripe/userforms",
@@ -2224,7 +2224,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2018-12-03 09:20:26"
+            "time": "2018-12-03T09:20:26+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -2272,7 +2272,7 @@
                 }
             ],
             "description": "Allows vendor modules to expose directories to the webroot",
-            "time": "2018-12-03 20:17:40"
+            "time": "2018-12-03T20:17:40+00:00"
         },
         {
             "name": "silverstripe/versioned",
@@ -2329,7 +2329,7 @@
                 "silverstripe",
                 "versioned"
             ],
-            "time": "2018-11-26 14:08:46"
+            "time": "2018-11-26T14:08:46+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2930,12 +2930,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "fac7c487488520109302a604d13c28f15e0a9640"
+                "reference": "dfb3b1e87673313cfc632509cfe2d8bea4c5a241"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/fac7c487488520109302a604d13c28f15e0a9640",
-                "reference": "fac7c487488520109302a604d13c28f15e0a9640",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/dfb3b1e87673313cfc632509cfe2d8bea4c5a241",
+                "reference": "dfb3b1e87673313cfc632509cfe2d8bea4c5a241",
                 "shasum": ""
             },
             "require": {
@@ -2981,7 +2981,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-12-11 14:13:08"
+            "time": "2018-12-19 19:15:57"
         },
         {
             "name": "undefinedoffset/sortablegridfield",

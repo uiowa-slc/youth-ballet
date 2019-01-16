@@ -7,24 +7,15 @@
 			<section id="main-content" tabindex="-1">
 				<h1>$Title</h1>
 				<div class="vevent">
-
-					<% with CurrentDate %>
-						<p class="dates">$DateRange<% if StartTime %><br> $TimeRange<% end_if %></p>
+					<% loop $Dates %>
+						<p class="dates">$StartDate.Format("E, MMM, d") - $EndDate.Format("E, MMM, d")<br><% loop $TimesFormatted %>
+                                <time class="show-list__time">$TimeFormatted</time>
+                            <% end_loop %>
+                        </p>
 						<p><a href="$ICSLink" title="<% _t('CalendarEvent.ADD','Add to Calendar') %>">Add this to Calendar</a></p>
-					<% end_with %>
+                    <% end_loop %>
 
 					$Content
-
-					<% if OtherDates %>
-					<div class="event-calendar-other-dates">
-					 <h4><% _t('CalendarEvent.ADDITIONALDATES','Additional Dates for this Event') %></h4>
-					 <ul>
-					   <% loop OtherDates %>
-					   <li><a href="$Link" title="$Event.Title">$DateRange<% if StartTime %> $TimeRange<% end_if %></a></li>
-					   <% end_loop %>
-					 </ul>
-					</div>
-					<% end_if %>
 				</div>
 			</section>
 		</div><!-- end .col -->
