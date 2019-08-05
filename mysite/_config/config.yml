@@ -6,9 +6,9 @@ MetaTitleExtension:
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - SiteConfigExtension
-Calendar:
+Unclecheese\EventCalendar\Calendar:
   extensions:
     - CalendarExtension
-CalendarEvent:
+Unclecheese\EventCalendar\CalendarEvent:
   extensions:
     - CalendarEventExtension
