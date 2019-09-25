@@ -113,7 +113,7 @@
 								<ul>
 									<% loop $BlogPosts.Limit(3) %>
 										<li>
-											<span class="date">$PublishDate.format(F d)</span>
+											<span class="date">Posted on $PublishDate.format(MMMM d)</span>
 											<a href="$Link">$Title</a>
 
 										</li>
