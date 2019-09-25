@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
+use SilverStripe\Forms\GridField\GridField;
+use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 /**
  * Defines the InteriorPage page type
  */
@@ -26,8 +30,4 @@ class InteriorPage extends Page {
 
 		return $fields;
 	}
-}
-
-class InteriorPage_Controller extends Page_Controller {
-
 }

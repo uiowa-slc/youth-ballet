@@ -13,7 +13,7 @@
 						<h4 class="position">$StaffPosition</h4>
 					<% end_if %>
 					<hr />
-					<img src="$StaffPhoto.CroppedImage(400,500).URL" alt="$Title" class="staffmember-img">
+					<img src="$StaffPhoto.FocusFill(400,500).URL" alt="$Title" class="staffmember-img">
 
 					<!-- Email & Phone -->
 					<% if $StaffEmailAddress || $StaffPhoneNumber %>

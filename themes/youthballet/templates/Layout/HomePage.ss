@@ -2,11 +2,11 @@
 	<% include MainNav %>
 	<picture class="picture">
 		<!--[if IE 9]><video style="display: none;"><![endif]-->
-		<source srcset="$BackgroundPhoto.CroppedFocusedImage(1200,750).URL" media="(min-width: 980px)">
-		<source srcset="$BackgroundPhoto.CroppedFocusedImage(980,660).URL" media="(min-width: 768px)">
-		<source srcset="$BackgroundPhoto.CroppedFocusedImage(768,670).URL" media="(min-width: 480px)">
+		<source srcset="$BackgroundPhoto.FocusFill(1200,750).URL" media="(min-width: 980px)">
+		<source srcset="$BackgroundPhoto.FocusFill(980,660).URL" media="(min-width: 768px)">
+		<source srcset="$BackgroundPhoto.FocusFill(768,670).URL" media="(min-width: 480px)">
 		<!--[if IE 9]></video><![endif]-->
-		<img srcset="$BackgroundPhoto.CroppedFocusedImage(480,500).URL" alt="$Title">
+		<img srcset="$BackgroundPhoto.FocusFill(480,500).URL" alt="$Title">
 	</picture>
 	<div class="inner">
 		<h3>$HomePhotoTitle</h3>
@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="program clearfix">
 					<div class="border-img">
-						<img src="$Program1Photo.CroppedImage(350,350).URL" alt="$Program1Title">
+						<img src="$Program1Photo.FocusFill(350,350).URL" alt="$Program1Title">
 					</div>
 					<div class="content">
 						<h3>$Program1Title</h3>
@@ -37,7 +37,7 @@
 				</div>
 				<div class="program clearfix">
 					<div class="border-img">
-						<img src="$Program2Photo.CroppedImage(350,350).URL" alt="$Program2Title">
+						<img src="$Program2Photo.FocusFill(350,350).URL" alt="$Program2Title">
 					</div>
 					<div class="content">
 						<h3>$Program2Title</h3>
@@ -47,7 +47,7 @@
 				</div>
 				<div class="program clearfix">
 					<div class="border-img">
-						<img src="$Program3Photo.CroppedImage(350,350).URL" alt="$Program3Title">
+						<img src="$Program3Photo.FocusFill(350,350).URL" alt="$Program3Title">
 					</div>
 					<div class="content">
 						<h3>$Program3Title</h3>
@@ -84,7 +84,7 @@
 				<div class="col-md-4">
 					<div class="learn-spot clearfix">
 						<div class="border-img">
-							<img src="$AboutUsFeature1Photo.CroppedImage(350,350).URL" alt="$AboutUsFeature1Title">
+							<img src="$AboutUsFeature1Photo.FocusFill(350,350).URL" alt="$AboutUsFeature1Title">
 						</div>
 						<div class="content">
 							<h5>$AboutUsFeature1SubTitle</h5>
@@ -96,7 +96,7 @@
 				<div class="col-md-4">
 					<div class="learn-spot clearfix">
 						<div class="border-img">
-							<img src="$AboutUsFeature2Photo.CroppedImage(350,350).URL" alt="$AboutUsFeature2Title">
+							<img src="$AboutUsFeature2Photo.FocusFill(350,350).URL" alt="$AboutUsFeature2Title">
 						</div>
 						<div class="content">
 							<h5>$AboutUsFeature2SubTitle</h5>
@@ -113,7 +113,7 @@
 								<ul>
 									<% loop $BlogPosts.Limit(3) %>
 										<li>
-											<span class="date">$PublishDate.format(F d)</span>
+											<span class="date">Posted on $PublishDate.format(MMMM d)</span>
 											<a href="$Link">$Title</a>
 
 										</li>

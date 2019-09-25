@@ -15,7 +15,7 @@
 						<li class="justify-item">
 							<a href="$Link">
 								<% if $StaffPhoto %>
-									<img src="$StaffPhoto.CroppedImage(300,400).URL" alt="">
+									<img src="$StaffPhoto.FocusFill(300,400).URL" alt="">
 								<% end_if %>
 								<h4 class="title">$Title</h4>
 								<% if $StaffPosition %><em class="position">$StaffPosition</em><% end_if %>

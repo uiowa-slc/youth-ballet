@@ -27,6 +27,6 @@
 		</div><!-- end .col -->
 	</div><!-- end .row -->
 </main><!-- end .container -->
-<% include PhotoGallery %>
+<%-- <% include PhotoGallery %> --%>
 <% include Enroll %>
 
