@@ -15,7 +15,8 @@
         "md/uiowa-bar": "*",
         "md/division-analytics": "*",
         "undefinedoffset/sortablegridfield": "*",
-        "md/saml": "dev-md"
+        "md/saml": "dev-md",
+        "md/deploy-helper": "*"
     },
     "extra": {
         "expose": [
@@ -59,6 +60,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/deploy-helper"
         }
     ]
 }
