@@ -7,7 +7,7 @@
 			<article id="main-content" class="clearfix newsentry" tabindex="-1">
 				<h1 class="entry-title">$Title</h1>
 				<p class="entry-date">
-					<time datetime="$PublishDate.format(c)" itemprop="datePublished">$PublishDate.format("MMM d, YYYY")</time>
+					Posted on <time datetime="$PublishDate.format(c)" itemprop="datePublished">$PublishDate.format("MMM d, YYYY")</time>
 				</p>
 				<hr />
 				<% if $FeaturedImage %>
