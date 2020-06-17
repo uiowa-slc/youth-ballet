@@ -12,7 +12,7 @@
         "jonom/focuspoint": "*",
         "silverstripe/blog": "*",
         "colymba/gridfield-bulk-editing-tools": "*",
-        "md/uiowa-bar": "*",
+        "md/uiowa-bar": "2.*",
         "md/division-analytics": "*",
         "undefinedoffset/sortablegridfield": "*",
         "md/saml": "dev-md",
