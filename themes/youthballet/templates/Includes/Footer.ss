@@ -25,7 +25,7 @@
 			</div>
 			<div class="clearfix visible-md-block"></div>
 			<div class="col-sm-12 col-md-3">
-				<img src="$resourceURL('themes/youthballet/dist/images/clas_black_arch_solid.png')" alt="College of Liberal Arts and Sciences logo" style="display: block;margin: 0 auto;">
+				<a href="https://clas.uiowa.edu" target="_blank" rel="noopener"><img src="$resourceURL('themes/youthballet/dist/images/clas_black_arch_solid.png')" alt="College of Liberal Arts and Sciences logo" style="display: block;margin: 0 auto;">
 			</div>
 		</div>
 		<div class="row">
