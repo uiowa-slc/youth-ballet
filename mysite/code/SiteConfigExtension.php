@@ -25,7 +25,7 @@ class SiteConfigExtension extends DataExtension {
 
 		$fields->addFieldToTab('Root.Main', new TextField('Address1', 'Address'));
 		$fields->addFieldToTab('Root.Main', new TextField('Phone', 'Phone Number'));
-		$fields->addFieldToTab('Root.Main', new TextField(Email::class, Email::class));
+		$fields->addFieldToTab('Root.Main', new TextField('Email', 'Email'));
 		$fields->addFieldToTab('Root.Main', new UploadField('DefaultPhoto', 'Default Background Photo'));
 
 		return $fields;
