@@ -5,7 +5,7 @@
     "require": {
         "php": ">=5.6.0",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "4.5.*@stable",
+        "silverstripe/recipe-cms": "4.6.*@stable",
         "silverstripe/userforms": "*",
         "silverstripe/googlesitemaps": "*",
         "jonom/silverstripe-betternavigator": "~4.1.1",
@@ -27,6 +27,7 @@
         "project-files-installed": [
             "app/.htaccess",
             "app/_config.php",
+            "app/_config/mimevalidator.yml",
             "app/_config/mysite.yml",
             "app/src/Page.php",
             "app/src/PageController.php"
