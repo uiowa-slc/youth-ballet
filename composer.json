@@ -5,18 +5,17 @@
     "require": {
         "php": ">=5.6.0",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "4.6.*@stable",
+        "silverstripe/recipe-cms": "4.7.*@stable",
         "silverstripe/userforms": "*",
         "silverstripe/googlesitemaps": "*",
-        "jonom/silverstripe-betternavigator": "~4.1.1",
+        "jonom/silverstripe-betternavigator": "5.*",
         "jonom/focuspoint": "*",
         "silverstripe/blog": "*",
         "colymba/gridfield-bulk-editing-tools": "*",
         "md/uiowa-bar": "2.*",
         "md/division-analytics": "1.3.*",
         "undefinedoffset/sortablegridfield": "*",
-        "md/saml": "dev-md",
-        "md/deploy-helper": "*"
+        "md/saml": "dev-md"
     },
     "extra": {
         "expose": [
@@ -52,19 +51,11 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-betternavigator"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-event-calendar/"
         },
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/deploy-helper"
         }
     ]
 }
