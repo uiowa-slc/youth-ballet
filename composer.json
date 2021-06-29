@@ -4,11 +4,12 @@
     "description": "The SilverStripe Framework Installer",
     "require": {
         "php": ">=5.6.0",
+        "md/silverstripe-migration-tools": "dev-main",
         "silverstripe/recipe-plugin": "^1.2",
         "silverstripe/recipe-cms": "4.6.*@stable",
         "silverstripe/userforms": "*",
         "silverstripe/googlesitemaps": "*",
-        "jonom/silverstripe-betternavigator": "~4.1.1",
+        "jonom/silverstripe-betternavigator": "*",
         "jonom/focuspoint": "*",
         "silverstripe/blog": "*",
         "colymba/gridfield-bulk-editing-tools": "*",
@@ -48,11 +49,11 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-betternavigator"
+            "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
         },
         {
             "type": "vcs",
